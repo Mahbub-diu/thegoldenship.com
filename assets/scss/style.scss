@@ -1,0 +1,143 @@
+@import 'partials/colors';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/common';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $nm-font;
+  color: $ash;
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.login-main {
+  background-color: $l-black;
+  width: 100%;
+  height: 100vh;
+  .login-parent {
+    position: relative;
+    height: 100vh;
+    .login-box {
+      width: 412px;
+
+      @include trans-xy-center;
+      .logo-box {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .title-box {
+        text-align: center;
+        margin-bottom: 20px;
+        h3 {
+          font-family: $sf-font;
+          color: $white;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 38px;
+          margin-bottom: 0;
+          //   text-transform: capitalize;
+        }
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-label {
+        @include common-form-label;
+      }
+      .form-control {
+        @include common-form-control;
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+      a.forget-pass {
+        margin-top: 20px;
+        display: block;
+        color: $ash;
+        font-size: 16px;
+        line-height: 26px;
+        font-family: $sf-font;
+        font-weight: 400;
+      }
+      ::placeholder {
+        color: $ash;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $sf-font;
+      }
+      .login-btn {
+        @include common-login-btn;
+      }
+      .reg-divider {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        color: $ash;
+        font-family: $sf-font;
+        font-weight: 500;
+      }
+      .google-login-btn {
+        @include commn-google-login-btn;
+        margin-bottom: 20px;
+        span {
+          margin-right: 5px;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+      h5 {
+        font-family: $sf-font;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: $white;
+        line-height: 26px;
+      }
+      a.sign-link {
+        color: #b266ff;
+        font-family: $sf-font;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+  }
+}

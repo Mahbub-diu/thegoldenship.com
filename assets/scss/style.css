@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neue Machina";
+  color: #7f8283;
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.login-main {
+  background-color: #1a1b1c;
+  width: 100%;
+  height: 100vh;
+}
+.login-main .login-parent {
+  position: relative;
+  height: 100vh;
+}
+.login-main .login-parent .login-box {
+  width: 412px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.login-main .login-parent .login-box .logo-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-main .login-parent .login-box .title-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-main .login-parent .login-box .title-box h3 {
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 0;
+}
+.login-main .login-parent .login-box .form-group {
+  margin-bottom: 20px;
+}
+.login-main .login-parent .login-box .form-label {
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.login-main .login-parent .login-box .form-control {
+  padding: 12px 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #333636;
+  background-color: #1a1b1c;
+  color: #ffffff;
+  font-family: "SF Pro Display";
+}
+.login-main .login-parent .login-box .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+.login-main .login-parent .login-box a.forget-pass {
+  margin-top: 20px;
+  display: block;
+  color: #7f8283;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+.login-main .login-parent .login-box ::-moz-placeholder {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
+.login-main .login-parent .login-box ::placeholder {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
+.login-main .login-parent .login-box .login-btn {
+  background: #7a00f3;
+  color: #ffffff;
+  width: 100%;
+  padding: 8px 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-transform: capitalize;
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.login-main .login-parent .login-box .reg-divider {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7f8283;
+  font-family: "SF Pro Display";
+  font-weight: 500;
+}
+.login-main .login-parent .login-box .google-login-btn {
+  background: #333636;
+  color: #ffffff;
+  width: 100%;
+  padding: 8px 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.login-main .login-parent .login-box .google-login-btn span {
+  margin-right: 5px;
+}
+.login-main .login-parent .login-box .google-login-btn span img {
+  width: 24px;
+  height: 24px;
+}
+.login-main .login-parent .login-box .google-login-btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+.login-main .login-parent .login-box h5 {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 26px;
+}
+.login-main .login-parent .login-box a.sign-link {
+  color: #b266ff;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
