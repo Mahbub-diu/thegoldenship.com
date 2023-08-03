@@ -99,7 +99,6 @@ img {
   outline: none;
 }
 .login-main .login-parent .login-box a.forget-pass {
-  margin-top: 20px;
   display: block;
   color: #7f8283;
   font-size: 16px;
@@ -136,6 +135,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
+  margin-top: 20px;
 }
 .login-main .login-parent .login-box .reg-divider {
   margin: 20px 0;

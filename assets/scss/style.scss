@@ -80,7 +80,7 @@ img {
         }
       }
       a.forget-pass {
-        margin-top: 20px;
+        // margin-top: 20px;
         display: block;
         color: $ash;
         font-size: 16px;
@@ -97,6 +97,7 @@ img {
       }
       .login-btn {
         @include common-login-btn;
+        margin-top: 20px;
       }
       .reg-divider {
         margin: 20px 0;
