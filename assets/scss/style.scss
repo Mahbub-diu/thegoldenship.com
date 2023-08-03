@@ -141,3 +141,102 @@ img {
     }
   }
 }
+
+// dashboard page start from here
+.dashboard-main {
+  background-color: $l-black;
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+  .dashboard-header-main {
+    margin-bottom: 28px;
+
+    .header-flex {
+      display: flex;
+      flex-wrap: wrap;
+      .icon-box {
+        flex-basis: 40px;
+        margin-right: 20px;
+      }
+      .header-box {
+        flex-basis: calc(100% - 60px);
+
+        h1.dashboard-title {
+          font-family: $sf-font;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 38px;
+          color: $white;
+          text-transform: capitalize;
+        }
+        p.dates {
+          font-family: $sf-font;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: $ash;
+          text-transform: capitalize;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .dashboard-card {
+    @include dashboard-common-card;
+    .dashboard-card-header {
+      @include dashboard-common-card-header;
+      h2.dash-card-title {
+        font-family: $sf-font;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        text-transform: capitalize;
+        color: $white;
+        margin-bottom: 0;
+      }
+    }
+    .checked-tasks {
+      .single-task-flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 15px;
+        .check-icon {
+          margin-right: 10px;
+          .form-check-input {
+            width: 20px;
+            height: 20px;
+            @include make-circle;
+            &:focus {
+              @include common-focus-action;
+            }
+          }
+          .form-check-input:checked {
+            background-color: $green;
+            border-color: $green;
+          }
+        }
+        .task-box {
+          flex-basis: calc(100% - 40px);
+          .check-task-btn {
+            width: 100%;
+            padding: 8px 16px;
+            background: $purple-brand;
+            color: $white;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            font-family: $sf-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.09px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
