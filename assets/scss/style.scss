@@ -15,6 +15,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
+
   li {
     margin: 0;
     padding: 0;
@@ -29,6 +30,7 @@ button:focus {
   box-shadow: none;
   outline: none;
 }
+
 input:focus {
   box-shadow: none;
   outline: none;
@@ -42,20 +44,25 @@ img {
   background-color: $l-black;
   width: 100%;
   height: 100vh;
+
   .login-parent {
     position: relative;
     height: 100vh;
+
     .login-box {
       width: 412px;
 
       @include trans-xy-center;
+
       .logo-box {
         text-align: center;
         margin-bottom: 30px;
       }
+
       .title-box {
         text-align: center;
         margin-bottom: 20px;
+
         h3 {
           font-family: $sf-font;
           color: $white;
@@ -66,19 +73,24 @@ img {
           //   text-transform: capitalize;
         }
       }
+
       .form-group {
         margin-bottom: 20px;
       }
+
       .form-label {
         @include common-form-label;
       }
+
       .form-control {
         @include common-form-control;
+
         &:focus {
           box-shadow: none;
           outline: none;
         }
       }
+
       a.forget-pass {
         // margin-top: 20px;
         display: block;
@@ -88,6 +100,7 @@ img {
         font-family: $sf-font;
         font-weight: 400;
       }
+
       ::placeholder {
         color: $ash;
         font-weight: 400;
@@ -95,10 +108,12 @@ img {
         line-height: 24px;
         font-family: $sf-font;
       }
+
       .login-btn {
         @include common-login-btn;
         margin-top: 20px;
       }
+
       .reg-divider {
         margin: 20px 0;
         text-align: center;
@@ -108,21 +123,26 @@ img {
         font-family: $sf-font;
         font-weight: 500;
       }
+
       .google-login-btn {
         @include commn-google-login-btn;
         margin-bottom: 20px;
+
         span {
           margin-right: 5px;
+
           img {
             width: 24px;
             height: 24px;
           }
         }
+
         &:focus {
           box-shadow: none;
           outline: none;
         }
       }
+
       h5 {
         font-family: $sf-font;
         font-size: 16px;
@@ -131,6 +151,7 @@ img {
         color: $white;
         line-height: 26px;
       }
+
       a.sign-link {
         color: #b266ff;
         font-family: $sf-font;
@@ -149,16 +170,19 @@ img {
   width: 100%;
   min-height: 100vh;
   padding: 28px;
+
   .dashboard-header-main {
     margin-bottom: 28px;
 
     .header-flex {
       display: flex;
       flex-wrap: wrap;
+
       .icon-box {
         flex-basis: 40px;
         margin-right: 20px;
       }
+
       .header-box {
         flex-basis: calc(100% - 60px);
 
@@ -170,6 +194,7 @@ img {
           color: $white;
           text-transform: capitalize;
         }
+
         p.dates {
           font-family: $sf-font;
           font-weight: 400;
@@ -185,8 +210,10 @@ img {
 
   .dashboard-card {
     @include dashboard-common-card;
+
     .dashboard-card-header {
       @include dashboard-common-card-header;
+
       h2.dash-card-title {
         font-family: $sf-font;
         font-weight: 700;
@@ -197,29 +224,36 @@ img {
         margin-bottom: 0;
       }
     }
+
     .checked-tasks {
       .single-task-flex {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         margin-bottom: 15px;
+
         .check-icon {
           margin-right: 10px;
+
           .form-check-input {
             width: 20px;
             height: 20px;
             @include make-circle;
+
             &:focus {
               @include common-focus-action;
             }
           }
+
           .form-check-input:checked {
             background-color: $green;
             border-color: $green;
           }
         }
+
         .task-box {
           flex-basis: calc(100% - 40px);
+
           .check-task-btn {
             width: 100%;
             padding: 8px 16px;
@@ -240,4 +274,204 @@ img {
       }
     }
   }
+}
+
+
+// Jorney Page
+.layout-wrapper {
+  background-color: $l-black;
+  width: 100%;
+  height: 100vh;
+
+  // .layout-container {
+  //   .layout-page {
+  //     .content-wrapper {
+  //       .app-calendar-wrapper {
+  //         background-color: $l-black;
+
+  //         .app-calendar-sidebar {
+  //           .flatpickr-calendar {
+  //             background-color: $l-black;
+  //           }
+  //         }
+
+  //         .app-calendar-content {
+  //           .card {
+  //             background-color: $l-black;
+
+  //             .card-body {
+  //               #calendar {
+  //                 .fc-toolbar {
+  //                   .fc-toolbar-chunk {
+  //                     .fc-button-group {
+  //                       .fc-button {
+  //                         color: $white;
+  //                         background-color: transparent !important;
+  //                         border-radius: 30px;
+
+  //                         span {
+  //                           color: $white;
+
+  //                         }
+  //                       }
+
+  //                       .fc-button.fc-button-active {
+  //                         background-color: $d-ash !important;
+  //                       }
+  //                     }
+
+  //                     h2.fc-toolbar-title {
+  //                       color: $white !important;
+  //                     }
+  //                   }
+  //                 }
+
+  //                 .fc-view-harness {
+  //                   .fc-dayGridMonth-view {
+  //                     .fc-scrollgrid {
+  //                       border: 1px solid $d-ash;
+
+  //                       thead {
+  //                         tr.fc-scrollgrid-section-header {
+  //                           th {
+  //                             .fc-scroller-harness {
+  //                               .fc-scroller {
+  //                                 table.fc-col-header {
+  //                                   thead {
+  //                                     tr {
+  //                                       th {
+  //                                         border: 1px solid $d-ash;
+  //                                       }
+  //                                     }
+  //                                   }
+  //                                 }
+  //                               }
+  //                             }
+  //                           }
+  //                         }
+  //                       }
+  //                     }
+  //                   }
+
+  //                   table {
+  //                     thead {}
+
+  //                     tbody {}
+  //                   }
+  //                 }
+  //               }
+  //             }
+  //           }
+  //         }
+
+  //       }
+  //     }
+  //   }
+  // }
+
+  
+}
+
+
+
+.light-style {
+
+  .app-calendar-wrapper {
+    background-color: $l-black;
+
+    .app-calendar-sidebar {
+      .flatpickr-calendar {
+        background-color: $l-black;
+      }
+    }
+
+    .app-calendar-content {
+      .card {
+        background-color: $l-black;
+
+        .card-body {
+          #calendar {
+            .fc-toolbar {
+              .fc-toolbar-chunk {
+                .fc-button-group {
+                  .fc-button {
+                    color: $white;
+                    background-color: transparent !important;
+                    border-radius: 30px;
+
+                    span {
+                      color: $white;
+
+                    }
+                  }
+
+                  .fc-button.fc-button-active {
+                    background-color: $d-ash !important;
+                  }
+                }
+
+                h2.fc-toolbar-title {
+                  color: $white !important;
+                }
+              }
+            }
+
+            .fc-view-harness {
+              .fc-dayGridMonth-view {
+                .fc-scrollgrid {
+                  border: 1px solid $d-ash;
+
+                  thead {
+                    tr.fc-scrollgrid-section-header {
+                      th {
+                        .fc-scroller-harness {
+                          .fc-scroller {
+                            table.fc-col-header {
+                              thead {
+                                tr {
+                                  th {
+                                    border: 1px solid $d-ash;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              table {
+                thead {}
+
+                tbody {}
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+	.fc {
+		.fc-day-today {
+			background-color: $d-ash !important;
+		}
+		table.fc-scrollgrid {
+			td {
+				border-color: $d-ash;;
+			}
+		}
+		.fc-list {
+			.fc-list-table {
+				th {
+					border: 0;
+					background: $d-gray;
+				}
+			}
+		}
+	}
 }
