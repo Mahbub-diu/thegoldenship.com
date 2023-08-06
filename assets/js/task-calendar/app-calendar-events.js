@@ -20,8 +20,8 @@ let events = [
     end: nextDay,
     allDay: false,
     extendedProps: {
-      calendar: 'Business'
-    }
+      calendar: 'Business',
+    },
   },
   {
     id: 2,
@@ -31,8 +31,8 @@ let events = [
     end: new Date(date.getFullYear(), date.getMonth() + 1, -10),
     allDay: true,
     extendedProps: {
-      calendar: 'Business'
-    }
+      calendar: 'Business',
+    },
   },
   {
     id: 3,
@@ -42,8 +42,8 @@ let events = [
     start: new Date(date.getFullYear(), date.getMonth() + 1, -9),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -7),
     extendedProps: {
-      calendar: 'Holiday'
-    }
+      calendar: 'Holiday',
+    },
   },
   {
     id: 4,
@@ -52,8 +52,8 @@ let events = [
     start: new Date(date.getFullYear(), date.getMonth() + 1, -11),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -10),
     extendedProps: {
-      calendar: 'Personal'
-    }
+      calendar: 'Personal',
+    },
   },
   {
     id: 5,
@@ -63,8 +63,8 @@ let events = [
     end: new Date(date.getFullYear(), date.getMonth() + 1, -12),
     allDay: true,
     extendedProps: {
-      calendar: 'ETC'
-    }
+      calendar: 'ETC',
+    },
   },
   {
     id: 6,
@@ -74,8 +74,8 @@ let events = [
     end: new Date(date.getFullYear(), date.getMonth() + 1, -12),
     allDay: true,
     extendedProps: {
-      calendar: 'Personal'
-    }
+      calendar: 'Personal',
+    },
   },
   {
     id: 7,
@@ -84,8 +84,8 @@ let events = [
     start: new Date(date.getFullYear(), date.getMonth() + 1, -13),
     end: new Date(date.getFullYear(), date.getMonth() + 1, -12),
     extendedProps: {
-      calendar: 'Family'
-    }
+      calendar: 'Family',
+    },
   },
   {
     id: 8,
@@ -95,8 +95,8 @@ let events = [
     end: new Date(date.getFullYear(), date.getMonth() + 1, -12),
     allDay: true,
     extendedProps: {
-      calendar: 'Business'
-    }
+      calendar: 'Business',
+    },
   },
   {
     id: 9,
@@ -106,8 +106,8 @@ let events = [
     end: nextMonth,
     allDay: true,
     extendedProps: {
-      calendar: 'Business'
-    }
+      calendar: 'Business',
+    },
   },
   {
     id: 10,
@@ -117,7 +117,7 @@ let events = [
     end: prevMonth,
     allDay: true,
     extendedProps: {
-      calendar: 'Personal'
-    }
-  }
+      calendar: 'Personal',
+    },
+  },
 ];

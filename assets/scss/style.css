@@ -106,6 +106,13 @@ img {
   font-family: "SF Pro Display";
   font-weight: 400;
 }
+.login-main .login-parent .login-box ::-moz-placeholder {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
 .login-main .login-parent .login-box ::placeholder {
   color: #7f8283;
   font-weight: 400;
@@ -300,11 +307,45 @@ img {
 .light-style .app-calendar-wrapper {
   background-color: #1a1b1c;
 }
+.light-style .app-calendar-wrapper .app-calendar-sidebar {
+  border-right: 1px solid #7f8283;
+}
+.light-style .app-calendar-wrapper .app-calendar-sidebar hr {
+  border-color: #7f8283;
+}
+.light-style .app-calendar-wrapper .app-calendar-sidebar .btn-primary {
+  background-color: #7a00f3;
+  border-color: #7a00f3;
+}
 .light-style .app-calendar-wrapper .app-calendar-sidebar .flatpickr-calendar {
   background-color: #1a1b1c;
 }
 .light-style .app-calendar-wrapper .app-calendar-content .card {
   background-color: #1a1b1c;
+}
+.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main {
+  margin-bottom: 0px;
+}
+.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main .header-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main .header-flex .icon-box {
+  flex-basis: 40px;
+  margin-right: 20px;
+}
+.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main .header-flex .header-box {
+  flex-basis: calc(100% - 60px);
+}
+.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main .header-flex .header-box h1.dashboard-title {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 0;
 }
 .light-style .app-calendar-wrapper .app-calendar-content .card .card-body #calendar .fc-toolbar .fc-toolbar-chunk .fc-button-group .fc-button {
   color: #ffffff;
@@ -319,6 +360,7 @@ img {
 }
 .light-style .app-calendar-wrapper .app-calendar-content .card .card-body #calendar .fc-toolbar .fc-toolbar-chunk h2.fc-toolbar-title {
   color: #ffffff !important;
+  font-size: 14px;
 }
 .light-style .app-calendar-wrapper .app-calendar-content .card .card-body #calendar .fc-view-harness .fc-dayGridMonth-view .fc-scrollgrid {
   border: 1px solid #333636;
@@ -335,4 +377,63 @@ img {
 .light-style .fc .fc-list .fc-list-table th {
   border: 0;
   background: #222424;
+}
+
+.offcanvas {
+  background: #222424;
+}
+.offcanvas .offcanvas-title {
+  color: #ffffff;
+}
+.offcanvas .form-group {
+  margin-bottom: 20px;
+}
+.offcanvas .form-label {
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.offcanvas .form-control {
+  padding: 12px 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #333636;
+  background-color: #1a1b1c;
+  color: #ffffff;
+  font-family: "SF Pro Display";
+}
+.offcanvas .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+.offcanvas .select2-container--default .select2-selection {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #333636;
+  background-color: #1a1b1c;
+  color: #ffffff;
+  font-family: "SF Pro Display";
+}
+.offcanvas .flatpickr-input[readonly] {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #333636;
+  background-color: #1a1b1c;
+  color: #ffffff;
+  font-family: "SF Pro Display";
+}
+.offcanvas .btn-primary {
+  background-color: #7a00f3;
+  border-color: #7a00f3;
 }/*# sourceMappingURL=style.css.map */

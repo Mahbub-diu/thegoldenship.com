@@ -276,110 +276,26 @@ img {
   }
 }
 
-
 // Jorney Page
 .layout-wrapper {
   background-color: $l-black;
   width: 100%;
   height: 100vh;
-
-  // .layout-container {
-  //   .layout-page {
-  //     .content-wrapper {
-  //       .app-calendar-wrapper {
-  //         background-color: $l-black;
-
-  //         .app-calendar-sidebar {
-  //           .flatpickr-calendar {
-  //             background-color: $l-black;
-  //           }
-  //         }
-
-  //         .app-calendar-content {
-  //           .card {
-  //             background-color: $l-black;
-
-  //             .card-body {
-  //               #calendar {
-  //                 .fc-toolbar {
-  //                   .fc-toolbar-chunk {
-  //                     .fc-button-group {
-  //                       .fc-button {
-  //                         color: $white;
-  //                         background-color: transparent !important;
-  //                         border-radius: 30px;
-
-  //                         span {
-  //                           color: $white;
-
-  //                         }
-  //                       }
-
-  //                       .fc-button.fc-button-active {
-  //                         background-color: $d-ash !important;
-  //                       }
-  //                     }
-
-  //                     h2.fc-toolbar-title {
-  //                       color: $white !important;
-  //                     }
-  //                   }
-  //                 }
-
-  //                 .fc-view-harness {
-  //                   .fc-dayGridMonth-view {
-  //                     .fc-scrollgrid {
-  //                       border: 1px solid $d-ash;
-
-  //                       thead {
-  //                         tr.fc-scrollgrid-section-header {
-  //                           th {
-  //                             .fc-scroller-harness {
-  //                               .fc-scroller {
-  //                                 table.fc-col-header {
-  //                                   thead {
-  //                                     tr {
-  //                                       th {
-  //                                         border: 1px solid $d-ash;
-  //                                       }
-  //                                     }
-  //                                   }
-  //                                 }
-  //                               }
-  //                             }
-  //                           }
-  //                         }
-  //                       }
-  //                     }
-  //                   }
-
-  //                   table {
-  //                     thead {}
-
-  //                     tbody {}
-  //                   }
-  //                 }
-  //               }
-  //             }
-  //           }
-  //         }
-
-  //       }
-  //     }
-  //   }
-  // }
-
-  
 }
 
-
-
 .light-style {
-
   .app-calendar-wrapper {
     background-color: $l-black;
 
     .app-calendar-sidebar {
+      border-right: 1px solid #7f8283;
+      hr {
+        border-color: #7f8283;
+      }
+      .btn-primary {
+        background-color: $purple-brand;
+        border-color: $purple-brand;
+      }
       .flatpickr-calendar {
         background-color: $l-black;
       }
@@ -390,6 +306,34 @@ img {
         background-color: $l-black;
 
         .card-body {
+          .dashboard-header-main {
+            margin-bottom: 0px;
+
+            .header-flex {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+
+              .icon-box {
+                flex-basis: 40px;
+                margin-right: 20px;
+              }
+
+              .header-box {
+                flex-basis: calc(100% - 60px);
+
+                h1.dashboard-title {
+                  font-family: $sf-font;
+                  font-weight: 700;
+                  font-size: 20px;
+                  line-height: 30px;
+                  color: $white;
+                  text-transform: capitalize;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
           #calendar {
             .fc-toolbar {
               .fc-toolbar-chunk {
@@ -401,7 +345,6 @@ img {
 
                     span {
                       color: $white;
-
                     }
                   }
 
@@ -412,6 +355,7 @@ img {
 
                 h2.fc-toolbar-title {
                   color: $white !important;
+                  font-size: 14px;
                 }
               }
             }
@@ -444,34 +388,85 @@ img {
               }
 
               table {
-                thead {}
+                thead {
+                }
 
-                tbody {}
+                tbody {
+                }
               }
             }
           }
         }
       }
     }
-
   }
 
-	.fc {
-		.fc-day-today {
-			background-color: $d-ash !important;
-		}
-		table.fc-scrollgrid {
-			td {
-				border-color: $d-ash;;
-			}
-		}
-		.fc-list {
-			.fc-list-table {
-				th {
-					border: 0;
-					background: $d-gray;
-				}
-			}
-		}
-	}
+  .fc {
+    .fc-day-today {
+      background-color: $d-ash !important;
+    }
+    table.fc-scrollgrid {
+      td {
+        border-color: $d-ash;
+      }
+    }
+    .fc-list {
+      .fc-list-table {
+        th {
+          border: 0;
+          background: $d-gray;
+        }
+      }
+    }
+  }
+}
+
+.offcanvas {
+  background: #222424;
+  .offcanvas-title {
+    color: $white;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    @include common-form-label;
+  }
+
+  .form-control {
+    @include common-form-control;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .select2-container--default {
+    .select2-selection {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border: 1px solid #333636;
+      background-color: #1a1b1c;
+      color: #ffffff;
+      font-family: 'SF Pro Display';
+    }
+  }
+  .flatpickr-input[readonly] {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid #333636;
+    background-color: #1a1b1c;
+    color: #ffffff;
+    font-family: 'SF Pro Display';
+  }
+  .btn-primary {
+    background-color: $purple-brand;
+    border-color: $purple-brand;
+  }
 }
