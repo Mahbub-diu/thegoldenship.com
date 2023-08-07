@@ -460,14 +460,17 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card p.text:last-child {
+  margin-bottom: 0;
 }
 .dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card p.list-title {
   padding: 0;
 }
 .dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card ul {
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card ul li {
   font-size: 16px;
