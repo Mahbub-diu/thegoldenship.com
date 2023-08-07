@@ -396,11 +396,13 @@ img {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
+  margin-bottom: 15px;
 }
 .dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .modal-body-subtitle {
   font-size: 14px;
   font-weight: 400;
   color: #7f8283;
+  margin-bottom: 15px;
 }
 .dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .btn-close {
   position: absolute;
@@ -414,6 +416,28 @@ img {
 }
 .dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .btn-close:hover {
   color: #7a00f3;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper .date img {
+  margin-right: 10px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper .date span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper .color img {
+  margin-right: 10px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper .color span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
 }
 .dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card {
   background-color: #333636;

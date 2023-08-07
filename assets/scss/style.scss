@@ -349,17 +349,19 @@ img {
         padding: 55px;
         font-family: $sf-font;
 
-        .modal-body-content-header{
+        .modal-body-content-header {
           position: relative;
           .modal-body-title {
             font-size: 16px;
             font-weight: 700;
             color: $white;
+            margin-bottom: 15px;
           }
           .modal-body-subtitle {
             font-size: 14px;
             font-weight: 400;
             color: $ash;
+            margin-bottom: 15px;
           }
           .btn-close {
             position: absolute;
@@ -373,6 +375,32 @@ img {
 
             &:hover {
               color: $purple-brand;
+            }
+          }
+          .date-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            .date {
+              img {
+                margin-right: 10px;
+              }
+              span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                color: $white;
+              }
+            }
+            .color {
+              img{
+                margin-right: 10px;
+              }
+              span{
+                font-size: 16px;
+                font-weight: 700;
+                color: $white;
+              }
             }
           }
         }
@@ -423,20 +451,20 @@ img {
             text-transform: capitalize;
           }
 
-          ul{
+          ul {
             list-style: none;
             color: $white;
-            li{
+            li {
               margin-bottom: 20px;
               &:first-child {
                 font-size: 16px;
               }
-              input{
+              input {
                 margin-right: 10px;
               }
-              ul{
+              ul {
                 padding-left: 15px;
-                li{
+                li {
                   margin-bottom: 20px;
                 }
               }
