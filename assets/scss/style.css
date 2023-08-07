@@ -258,6 +258,15 @@ img {
   color: #ffffff;
   margin-bottom: 0;
 }
+.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .spritual-card-title {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 0;
+}
 .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day h4 {
   font-size: 16px;
   font-weight: 400;
