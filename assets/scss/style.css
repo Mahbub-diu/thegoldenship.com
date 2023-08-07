@@ -382,6 +382,98 @@ img {
   font-weight: 700;
   margin-bottom: 0;
 }
+.dashboard-main .dashboard-modal .modal-content {
+  background-color: #222424;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body {
+  padding: 55px;
+  font-family: "SF Pro Display";
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header {
+  position: relative;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .modal-body-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .modal-body-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7f8283;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  font-size: 24px;
+  color: #7f8283;
+  transition: all 0.5s;
+  box-shadow: none;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .btn-close:hover {
+  color: #7a00f3;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card {
+  background-color: #333636;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 24px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card h4.title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card p.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card p.list-title {
+  padding: 0;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card ul {
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card ul li {
+  font-size: 16px;
+  font-weight: 400;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper h4.title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul {
+  list-style: none;
+  color: #ffffff;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li {
+  margin-bottom: 20px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li:first-child {
+  font-size: 16px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li input {
+  margin-right: 10px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li ul {
+  padding-left: 15px;
+}
+.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li ul li {
+  margin-bottom: 20px;
+}
 
 .layout-wrapper {
   background-color: #1a1b1c;

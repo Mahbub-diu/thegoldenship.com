@@ -341,6 +341,111 @@ img {
       }
     }
   }
+
+  .dashboard-modal {
+    .modal-content {
+      background-color: $d-gray;
+      .modal-body {
+        padding: 55px;
+        font-family: $sf-font;
+
+        .modal-body-content-header{
+          position: relative;
+          .modal-body-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: $white;
+          }
+          .modal-body-subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            color: $ash;
+          }
+          .btn-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: none;
+            font-size: 24px;
+            color: $ash;
+            transition: all 0.5s;
+            box-shadow: none;
+
+            &:hover {
+              color: $purple-brand;
+            }
+          }
+        }
+
+        .modal-body-card {
+          background-color: $d-ash;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          padding: 24px;
+          color: $white;
+          margin-bottom: 16px;
+          h4.title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-bottom: 30px;
+          }
+
+          p.text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+
+          p.list-title {
+            padding: 0;
+          }
+
+          ul {
+            padding-left: 15px;
+            margin-bottom: 30px;
+            li {
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .get-done-list-wrapper {
+          h4.title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            color: $white;
+            text-transform: capitalize;
+          }
+
+          ul{
+            list-style: none;
+            color: $white;
+            li{
+              margin-bottom: 20px;
+              &:first-child {
+                font-size: 16px;
+              }
+              input{
+                margin-right: 10px;
+              }
+              ul{
+                padding-left: 15px;
+                li{
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Jorney Page
