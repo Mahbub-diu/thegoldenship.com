@@ -227,7 +227,13 @@ img {
   text-transform: capitalize;
   margin-bottom: 0;
 }
-.dashboard-main .dashboard-card {
+.dashboard-main .dashboard-card-col {
+  margin-bottom: 24px;
+}
+.dashboard-main .dashboard-card-col:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+.dashboard-main .dashboard-card-col .dashboard-card {
   padding: 24px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -236,14 +242,14 @@ img {
   -o-border-radius: 10px;
   background: #222424;
 }
-.dashboard-main .dashboard-card .dashboard-card-header {
+.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.dashboard-main .dashboard-card .dashboard-card-header h2.dash-card-title {
+.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header h2.dash-card-title {
   font-family: "SF Pro Display";
   font-weight: 700;
   font-size: 28px;
@@ -252,16 +258,28 @@ img {
   color: #ffffff;
   margin-bottom: 0;
 }
-.dashboard-main .dashboard-card .checked-tasks .single-task-flex {
+.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day a {
+  width: 24px;
+  height: 24px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 15px;
 }
-.dashboard-main .dashboard-card .checked-tasks .single-task-flex .check-icon {
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .check-icon {
   margin-right: 10px;
 }
-.dashboard-main .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input {
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -270,18 +288,18 @@ img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.dashboard-main .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input:focus {
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input:focus {
   box-shadow: none;
   outline: none;
 }
-.dashboard-main .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input:checked {
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input:checked {
   background-color: #00aa3a;
   border-color: #00aa3a;
 }
-.dashboard-main .dashboard-card .checked-tasks .single-task-flex .task-box {
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box {
   flex-basis: calc(100% - 40px);
 }
-.dashboard-main .dashboard-card .checked-tasks .single-task-flex .task-box .check-task-btn {
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box .check-task-btn {
   width: 100%;
   padding: 8px 16px;
   background: #7a00f3;
@@ -296,6 +314,73 @@ img {
   font-size: 16px;
   line-height: 19.09px;
   text-align: left;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box-2 {
+  flex-basis: 100%;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box-2 .check-task-btn {
+  width: 100%;
+  padding: 8px 16px;
+  background: #292a2a;
+  color: #ffffff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.09px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control {
+  background: #292a2a;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #292a2a;
+  color: #ffffff;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-bottom: 15px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control::-moz-placeholder {
+  color: #7f8283;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control::placeholder {
+  color: #7f8283;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .add-task-btn-wrapper .add-task-btn {
+  background: #333636;
+  color: #ffffff;
+  width: 100%;
+  padding: 8px 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  border: none;
+  background: #000;
+  margin-top: 24px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card h5.quote-name {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 .layout-wrapper {
