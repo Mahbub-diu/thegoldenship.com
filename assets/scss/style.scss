@@ -210,9 +210,9 @@ img {
 
   .dashboard-card-col {
     margin-bottom: 24px;
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
+    // &:nth-last-child(-n + 2) {
+    //   margin-bottom: 0;
+    // }
     .dashboard-card {
       @include dashboard-common-card;
 
@@ -240,6 +240,8 @@ img {
         }
 
         .day {
+          display: flex;
+          align-items: center;
           h4 {
             font-size: 16px;
             font-weight: 400;
