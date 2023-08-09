@@ -49,6 +49,30 @@
     font-size: 14px;
     line-height: 10px;
   }
+  .dashboard-main .dashboard-header-main .header-flex .header-box h1.dashboard-title {
+    font-size: 24px;
+  }
+  .dashboard-main .dashboard-header-main .header-flex .header-box p.dates {
+    font-size: 14px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header h2.dash-card-title {
+    font-size: 20px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header h2.spritual-card-title {
+    font-size: 32px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box .check-task-btn, .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box-2 .check-task-btn {
+    font-size: 14px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control {
+    font-size: 14px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .add-task-btn-wrapper .add-task-btn {
+    font-size: 16px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .add-task-btn-wrapper .add-task-btn img {
+    width: 20px;
+  }
 }
 @media (max-width: 575px) {
   .login-main .login-parent .login-box {

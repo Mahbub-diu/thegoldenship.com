@@ -77,6 +77,57 @@
       }
     }
   }
+
+  .dashboard-main {
+    .dashboard-header-main{
+      .header-flex{
+        .icon-box{}
+        .header-box{
+          h1.dashboard-title{
+            font-size: 24px;
+          }
+          p.dates{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .dashboard-card-col {
+      .dashboard-card {
+        .dashboard-card-header {
+          h2.dash-card-title{
+            font-size: 20px;
+          }
+          h2.spritual-card-title {
+            font-size: 32px;
+          }
+        }
+        .checked-tasks{
+          .single-task-flex{
+            .task-box, .task-box-2 {
+              .check-task-btn{
+                font-size: 14px;
+              }
+            }
+          }
+          .single-task-input{
+            .form-control{
+              font-size: 14px;
+            }
+          }
+          .add-task-btn-wrapper{
+            .add-task-btn{
+              font-size: 16px;
+              img{
+                width: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (min-width: 376px) and (max-width: 414px) {
 }
