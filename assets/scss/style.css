@@ -1,3 +1,73 @@
+@charset "UTF-8";
+.common-progressbar-main .multi-steps > li.is-active ~ li:before, .common-progressbar-main .multi-steps > li.is-active:before {
+  content: counter(stepNum);
+  font-family: inherit;
+  font-weight: 500;
+}
+.common-progressbar-main .multi-steps > li.is-active ~ li:after, .common-progressbar-main .multi-steps > li.is-active:after {
+  border: 1px solid #333636;
+}
+
+.common-progressbar-main {
+  margin-top: 20px;
+}
+.common-progressbar-main .multi-steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.common-progressbar-main .multi-steps > li {
+  counter-increment: stepNum;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  color: #fff;
+}
+.common-progressbar-main .multi-steps > li:before {
+  content: "\f00c";
+  content: "✓;";
+  content: "𐀃";
+  content: "𐀄";
+  content: "✓";
+  display: block;
+  margin: 0 auto 4px;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  z-index: 9;
+  border-width: 2px;
+  border-style: solid;
+  border-color: tomato;
+  border-radius: 50%;
+}
+.common-progressbar-main .multi-steps > li:after {
+  content: "";
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: 0;
+}
+.common-progressbar-main .multi-steps > li:last-child:after {
+  display: none;
+}
+.common-progressbar-main .multi-steps > li.is-active:before {
+  background-color: #7a00f3;
+  border-color: #7a00f3;
+}
+.common-progressbar-main .multi-steps > li.is-active ~ li {
+  color: #fff;
+}
+.common-progressbar-main .multi-steps > li.is-active ~ li:before {
+  background-color: #333636;
+  border-color: #333636;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -279,6 +349,42 @@ img {
   width: 24px;
   height: 24px;
 }
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .day-title {
+  background: #292a2a;
+  padding: 8px 16px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "SF Pro Display";
+  line-height: 16.71px;
+  margin-bottom: 15px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .single-task {
+  background: #292a2a;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  line-height: 14.32px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .single-task:last-child {
+  margin-bottom: 0;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box.active .day-title {
+  background: #7a00f3;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box.active .single-task {
+  background: #7a00f3;
+}
 .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex {
   display: flex;
   flex-wrap: wrap;
@@ -383,7 +489,7 @@ img {
   line-height: 28px;
   border: none;
   background: #000;
-  margin-top: 24px;
+  margin-top: 0px;
 }
 .dashboard-main .dashboard-card-col .dashboard-card h5.quote-name {
   color: #ffffff;

@@ -1,7 +1,7 @@
-@import "partials/colors";
-@import "partials/variables";
-@import "partials/mixins";
-@import "partials/common";
+@import 'partials/colors';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/common';
 
 body {
   margin: 0;
@@ -229,7 +229,7 @@ img {
           margin-bottom: 0;
         }
 
-        .spritual-card-title{
+        .spritual-card-title {
           font-family: 'Tangerine', cursive;
           font-weight: 700;
           font-size: 40px;
@@ -251,6 +251,47 @@ img {
           a {
             width: 24px;
             height: 24px;
+          }
+        }
+      }
+
+      .calendar-grid-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        .single-day-box {
+          .day-title {
+            background: #292a2a;
+            padding: 8px 16px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-family: $sf-font;
+            line-height: 16.71px;
+            margin-bottom: 15px;
+          }
+          .single-task {
+            background: #292a2a;
+            padding: 8px;
+            margin-bottom: 15px;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: $sf-font;
+            color: $white;
+            line-height: 14.32px;
+          }
+          .single-task:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .single-day-box.active {
+          .day-title {
+            background: $purple-brand;
+          }
+          .single-task {
+            background: $purple-brand;
           }
         }
       }
@@ -338,7 +379,7 @@ img {
             @include commn-google-login-btn;
             border: none;
             background: #000;
-            margin-top: 24px;
+            margin-top: 0px;
           }
         }
       }
@@ -403,10 +444,10 @@ img {
               }
             }
             .color {
-              img{
+              img {
                 margin-right: 10px;
               }
-              span{
+              span {
                 font-size: 16px;
                 font-weight: 700;
                 color: $white;
@@ -667,7 +708,7 @@ img {
       border: 1px solid #333636;
       background-color: #1a1b1c;
       color: #ffffff;
-      font-family: "SF Pro Display";
+      font-family: 'SF Pro Display';
     }
   }
   .flatpickr-input[readonly] {
@@ -678,7 +719,7 @@ img {
     border: 1px solid #333636;
     background-color: #1a1b1c;
     color: #ffffff;
-    font-family: "SF Pro Display";
+    font-family: 'SF Pro Display';
   }
   .btn-primary {
     background-color: $purple-brand;
