@@ -824,4 +824,114 @@ img {
 }
 .fixed-nav-main .fixed-nav .icon-box img {
   max-height: 50px;
+}
+
+.storyboard-main {
+  background-color: #1a1b1c;
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+  margin-bottom: 100px;
+}
+.storyboard-main .dashboard-header-main {
+  margin-bottom: 28px;
+}
+.storyboard-main .dashboard-header-main .header-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.storyboard-main .dashboard-header-main .header-flex .icon-box {
+  flex-basis: 40px;
+  margin-right: 20px;
+}
+.storyboard-main .dashboard-header-main .header-flex .header-box {
+  flex-basis: calc(100% - 60px);
+}
+.storyboard-main .dashboard-header-main .header-flex .header-box h1.dashboard-title {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.storyboard-main .dashboard-header-main .header-flex .header-box p.dates {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #7f8283;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.storyboard-main .story-input-main {
+  background: #222424;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 20px;
+}
+.storyboard-main .story-input-main .build-title {
+  padding: 12px 24px;
+  background: #7a00f3;
+  color: #fff;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.64px;
+  font-family: "SF Pro Display";
+  margin-bottom: 20px;
+}
+.storyboard-main .story-input-main .form-group textarea {
+  background: #222424;
+  border: none;
+  color: #fff;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.storyboard-main .story-input-main .form-group textarea:focus {
+  box-shadow: none;
+  outline: none;
+}
+.storyboard-main .story-input-main .form-group ::-moz-placeholder {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
+.storyboard-main .story-input-main .form-group ::placeholder {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
+.storyboard-main .story-input-main .form-group p {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
+.storyboard-main .story-input-main .complete-btn {
+  border: 1px dashed #0071e3;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 16px;
+  line-height: 19.09px;
+  font-weight: 700;
+  font-family: "SF Pro Display";
 }/*# sourceMappingURL=style.css.map */
