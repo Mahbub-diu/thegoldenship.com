@@ -100,7 +100,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 dashboard-card-col">
-          <div class="dashboard-card h-100">
+          <div class="dashboard-card mb-20 ">
             <div class="dashboard-card-header">
               <h2 class="dash-card-title">Calender</h2>
             </div>
@@ -168,9 +168,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 dashboard-card-col">
-          <div class="dashboard-card h-100">
+
+
+          <div class="dashboard-card ">
             <div class="dashboard-card-header">
               <h2 class="dash-card-title">This weeks Quest</h2>
               <div class="day d-flex align-items-center">
@@ -207,7 +207,8 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 dashboard-card-col">
+
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 dashboard-card-col d-none">
           <div class="dashboard-card h-100">
             <div class="dashboard-card-header">
               <h2 class="spritual-card-title">Intuative Connect Practice</h2>
@@ -224,38 +225,38 @@
             <div class="checked-tasks">
               <div class="single-task-flex">
                 <div class="task-box-2">
-                  <button class="btn check-task-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <a href="#" class="btn check-task-btn">
                     <div class="check-icon">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                       </div>
                     </div>
                     Day 18 - Blink 500 Times at 12PM EST
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="single-task-flex">
                 <div class="task-box-2">
-                  <button class="btn check-task-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <a href="#" class="btn check-task-btn">
                     <div class="check-icon">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                       </div>
                     </div>
                     Morning Kriya Practices
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="single-task-flex">
                 <div class="task-box-2">
-                  <button class="btn check-task-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <a href="#" class="btn check-task-btn">
                     <div class="check-icon">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                       </div>
                     </div>
                     Night Meditation ( ADD LINK - redirect to youtube)
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -263,6 +264,7 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="common-progressbar-main">
@@ -276,6 +278,7 @@
           </div>
         </div>
       </div>
+
       <!-- Modal -->
       <div class="modal fade dashboard-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -397,6 +400,54 @@
       </div>
     </div>
   </section>
+  <section class="fixed-nav-main">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="fixed-nav">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <div class="calender-box">
+                    <div class="month-name">August</div>
+                    <div class="date">03</div>
+                  </div>
+                  dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="icon-box">
+                    <img src="assets/images/icon/story.png" alt="">
+                  </div>
+                  <div class="nav-title">story</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="icon-box">
+                    <img src="assets/images/icon/terminal.png" alt="">
+                  </div>
+                  <div class="nav-title">Journey</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="icon-box">
+                    <img src="assets/images/icon/star.png" alt="">
+                  </div>
+                  <div class="nav-title">rewards</div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

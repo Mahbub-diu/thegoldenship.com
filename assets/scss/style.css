@@ -68,6 +68,10 @@
   border-color: #333636;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -75,6 +79,7 @@ body {
   font-family: "Neue Machina";
   color: #7f8283;
   scroll-behavior: smooth;
+  background-color: #1a1b1c;
 }
 
 ul {
@@ -265,6 +270,7 @@ img {
   width: 100%;
   min-height: 100vh;
   padding: 28px;
+  margin-bottom: 100px;
 }
 .dashboard-main .dashboard-header-main {
   margin-bottom: 28px;
@@ -296,9 +302,6 @@ img {
   color: #7f8283;
   text-transform: capitalize;
   margin-bottom: 0;
-}
-.dashboard-main .dashboard-card-col {
-  margin-bottom: 24px;
 }
 .dashboard-main .dashboard-card-col:nth-last-child(-n+2) {
   margin-bottom: 0;
@@ -756,4 +759,69 @@ img {
 .offcanvas .btn-primary {
   background-color: #7a00f3;
   border-color: #7a00f3;
+}
+
+.fixed-nav-main {
+  margin: 50px 0;
+  position: fixed;
+  bottom: 0;
+  background-color: #1a1b1c;
+  width: 100%;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 100%;
+  z-index: 99;
+}
+.fixed-nav-main .fixed-nav ul.nav li.nav-item {
+  margin-right: 14px;
+}
+.fixed-nav-main .fixed-nav ul.nav li.nav-item a.nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "SF Pro Display";
+  text-transform: capitalize;
+  line-height: 24px;
+  min-height: 100px;
+}
+.fixed-nav-main .fixed-nav ul.nav li.nav-item a.nav-link.active {
+  border-bottom: 2px solid #7a00f3;
+  border-radius: 10px;
+}
+.fixed-nav-main .fixed-nav .calender-box {
+  min-width: 40px;
+  min-height: 40px;
+  background: #7a00f3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.fixed-nav-main .fixed-nav .calender-box .month-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+  text-transform: capitalize;
+}
+.fixed-nav-main .fixed-nav .calender-box .date {
+  font-weight: 700;
+  font-size: 15px;
+  border-top: 1px solid #222424;
+}
+.fixed-nav-main .fixed-nav .icon-box {
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+.fixed-nav-main .fixed-nav .icon-box img {
+  max-height: 50px;
 }/*# sourceMappingURL=style.css.map */
