@@ -1,3 +1,77 @@
+@charset "UTF-8";
+.common-progressbar-main .multi-steps > li.is-active ~ li:before, .common-progressbar-main .multi-steps > li.is-active:before {
+  content: counter(stepNum);
+  font-family: inherit;
+  font-weight: 500;
+}
+.common-progressbar-main .multi-steps > li.is-active ~ li:after, .common-progressbar-main .multi-steps > li.is-active:after {
+  border: 1px solid #333636;
+}
+
+.common-progressbar-main {
+  margin-top: 20px;
+}
+.common-progressbar-main .multi-steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.common-progressbar-main .multi-steps > li {
+  counter-increment: stepNum;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  color: #fff;
+}
+.common-progressbar-main .multi-steps > li:before {
+  content: "\f00c";
+  content: "✓;";
+  content: "𐀃";
+  content: "𐀄";
+  content: "✓";
+  display: block;
+  margin: 0 auto 4px;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  z-index: 9;
+  border-width: 2px;
+  border-style: solid;
+  border-color: tomato;
+  border-radius: 50%;
+}
+.common-progressbar-main .multi-steps > li:after {
+  content: "";
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: 0;
+}
+.common-progressbar-main .multi-steps > li:last-child:after {
+  display: none;
+}
+.common-progressbar-main .multi-steps > li.is-active:before {
+  background-color: #7a00f3;
+  border-color: #7a00f3;
+}
+.common-progressbar-main .multi-steps > li.is-active ~ li {
+  color: #fff;
+}
+.common-progressbar-main .multi-steps > li.is-active ~ li:before {
+  background-color: #333636;
+  border-color: #333636;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,6 +79,7 @@ body {
   font-family: "Neue Machina";
   color: #7f8283;
   scroll-behavior: smooth;
+  background-color: #1a1b1c;
 }
 
 ul {
@@ -195,6 +270,7 @@ img {
   width: 100%;
   min-height: 100vh;
   padding: 28px;
+  margin-bottom: 100px;
 }
 .dashboard-main .dashboard-header-main {
   margin-bottom: 28px;
@@ -279,6 +355,42 @@ img {
 .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day a {
   width: 24px;
   height: 24px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .day-title {
+  background: #292a2a;
+  padding: 8px 16px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "SF Pro Display";
+  line-height: 16.71px;
+  margin-bottom: 15px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .single-task {
+  background: #292a2a;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  line-height: 14.32px;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .single-task:last-child {
+  margin-bottom: 0;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box.active .day-title {
+  background: #7a00f3;
+}
+.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box.active .single-task {
+  background: #7a00f3;
 }
 .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex {
   display: flex;
@@ -384,7 +496,7 @@ img {
   line-height: 28px;
   border: none;
   background: #000;
-  margin-top: 24px;
+  margin-top: 0px;
 }
 .dashboard-main .dashboard-card-col .dashboard-card h5.quote-name {
   color: #ffffff;
@@ -651,4 +763,179 @@ img {
 .offcanvas .btn-primary {
   background-color: #7a00f3;
   border-color: #7a00f3;
+}
+
+.fixed-nav-main {
+  margin: 50px 0;
+  position: fixed;
+  bottom: 0;
+  background-color: #1a1b1c;
+  width: 100%;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 100%;
+  z-index: 99;
+}
+.fixed-nav-main .fixed-nav ul.nav li.nav-item {
+  margin-right: 14px;
+}
+.fixed-nav-main .fixed-nav ul.nav li.nav-item a.nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "SF Pro Display";
+  text-transform: capitalize;
+  line-height: 24px;
+  min-height: 100px;
+}
+.fixed-nav-main .fixed-nav ul.nav li.nav-item a.nav-link.active {
+  border-bottom: 2px solid #7a00f3;
+  border-radius: 10px;
+}
+.fixed-nav-main .fixed-nav .calender-box {
+  min-width: 40px;
+  min-height: 40px;
+  background: #7a00f3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.fixed-nav-main .fixed-nav .calender-box .month-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+  text-transform: capitalize;
+}
+.fixed-nav-main .fixed-nav .calender-box .date {
+  font-weight: 700;
+  font-size: 15px;
+  border-top: 1px solid #222424;
+}
+.fixed-nav-main .fixed-nav .icon-box {
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+.fixed-nav-main .fixed-nav .icon-box img {
+  max-height: 50px;
+}
+
+.storyboard-main {
+  background-color: #1a1b1c;
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+  margin-bottom: 100px;
+}
+.storyboard-main .dashboard-header-main {
+  margin-bottom: 28px;
+}
+.storyboard-main .dashboard-header-main .header-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.storyboard-main .dashboard-header-main .header-flex .icon-box {
+  flex-basis: 40px;
+  margin-right: 20px;
+}
+.storyboard-main .dashboard-header-main .header-flex .header-box {
+  flex-basis: calc(100% - 60px);
+}
+.storyboard-main .dashboard-header-main .header-flex .header-box h1.dashboard-title {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.storyboard-main .dashboard-header-main .header-flex .header-box p.dates {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #7f8283;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.storyboard-main .story-input-main {
+  background: #222424;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 20px;
+}
+.storyboard-main .story-input-main .build-title {
+  padding: 12px 24px;
+  background: #7a00f3;
+  color: #fff;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.64px;
+  font-family: "SF Pro Display";
+  margin-bottom: 20px;
+}
+.storyboard-main .story-input-main .form-group textarea {
+  background: #222424;
+  border: none;
+  color: #fff;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.storyboard-main .story-input-main .form-group textarea:focus {
+  box-shadow: none;
+  outline: none;
+}
+.storyboard-main .story-input-main .form-group ::-moz-placeholder {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
+.storyboard-main .story-input-main .form-group ::placeholder {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
+.storyboard-main .story-input-main .form-group p {
+  color: #7f8283;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SF Pro Display";
+}
+.storyboard-main .story-input-main .complete-btn {
+  border: 1px dashed #0071e3;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 16px;
+  line-height: 19.09px;
+  font-weight: 700;
+  font-family: "SF Pro Display";
 }/*# sourceMappingURL=style.css.map */

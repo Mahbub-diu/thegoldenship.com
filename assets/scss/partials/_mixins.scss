@@ -8,6 +8,15 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+@mixin trans-x-center {
+ 
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
 
 @mixin common-form-label {
   font-family: $sf-font;

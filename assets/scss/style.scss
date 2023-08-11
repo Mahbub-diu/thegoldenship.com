@@ -1,7 +1,7 @@
-@import "partials/colors";
-@import "partials/variables";
-@import "partials/mixins";
-@import "partials/common";
+@import 'partials/colors';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/common';
 
 body {
   margin: 0;
@@ -10,6 +10,7 @@ body {
   font-family: $nm-font;
   color: $ash;
   scroll-behavior: smooth;
+  background-color: $l-black;
 }
 
 ul {
@@ -170,6 +171,7 @@ img {
   width: 100%;
   min-height: 100vh;
   padding: 28px;
+  margin-bottom: 100px;
 
   .dashboard-header-main {
     margin-bottom: 28px;
@@ -229,7 +231,7 @@ img {
           margin-bottom: 0;
         }
 
-        .spritual-card-title{
+        .spritual-card-title {
           font-family: 'Tangerine', cursive;
           font-weight: 700;
           font-size: 40px;
@@ -253,6 +255,47 @@ img {
           a {
             width: 24px;
             height: 24px;
+          }
+        }
+      }
+
+      .calendar-grid-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        .single-day-box {
+          .day-title {
+            background: #292a2a;
+            padding: 8px 16px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-family: $sf-font;
+            line-height: 16.71px;
+            margin-bottom: 15px;
+          }
+          .single-task {
+            background: #292a2a;
+            padding: 8px;
+            margin-bottom: 15px;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: $sf-font;
+            color: $white;
+            line-height: 14.32px;
+          }
+          .single-task:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .single-day-box.active {
+          .day-title {
+            background: $purple-brand;
+          }
+          .single-task {
+            background: $purple-brand;
           }
         }
       }
@@ -340,7 +383,7 @@ img {
             @include commn-google-login-btn;
             border: none;
             background: #000;
-            margin-top: 24px;
+            margin-top: 0px;
           }
         }
       }
@@ -405,10 +448,10 @@ img {
               }
             }
             .color {
-              img{
+              img {
                 margin-right: 10px;
               }
-              span{
+              span {
                 font-size: 16px;
                 font-weight: 700;
                 color: $white;
@@ -669,7 +712,7 @@ img {
       border: 1px solid #333636;
       background-color: #1a1b1c;
       color: #ffffff;
-      font-family: "SF Pro Display";
+      font-family: 'SF Pro Display';
     }
   }
   .flatpickr-input[readonly] {
@@ -680,10 +723,185 @@ img {
     border: 1px solid #333636;
     background-color: #1a1b1c;
     color: #ffffff;
-    font-family: "SF Pro Display";
+    font-family: 'SF Pro Display';
   }
   .btn-primary {
     background-color: $purple-brand;
     border-color: $purple-brand;
+  }
+}
+
+.fixed-nav-main {
+  margin: 50px 0;
+  position: fixed;
+  bottom: 0;
+  background-color: $l-black;
+  width: 100%;
+  margin-bottom: 10px;
+  @include trans-x-center;
+  width: 100%;
+  z-index: 99;
+  .fixed-nav {
+    ul.nav {
+      li.nav-item {
+        margin-right: 14px;
+        a.nav-link {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: $sf-font;
+          text-transform: capitalize;
+          line-height: 24px;
+          min-height: 100px;
+        }
+        a.nav-link.active {
+          border-bottom: 2px solid $purple-brand;
+          border-radius: 10px;
+        }
+      }
+    }
+    .calender-box {
+      min-width: 40px;
+      min-height: 40px;
+      background: $purple-brand;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-align: center;
+      .month-name {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        font-family: $sf-font;
+        text-transform: capitalize;
+      }
+      .date {
+        font-weight: 700;
+        font-size: 15px;
+        border-top: 1px solid #222424;
+      }
+    }
+    .icon-box {
+      min-height: 50px;
+      margin-bottom: 10px;
+      img {
+        max-height: 50px;
+      }
+    }
+  }
+}
+
+.storyboard-main {
+  background-color: $l-black;
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+  margin-bottom: 100px;
+  .dashboard-header-main {
+    margin-bottom: 28px;
+
+    .header-flex {
+      display: flex;
+      flex-wrap: wrap;
+
+      .icon-box {
+        flex-basis: 40px;
+        margin-right: 20px;
+      }
+
+      .header-box {
+        flex-basis: calc(100% - 60px);
+
+        h1.dashboard-title {
+          font-family: $sf-font;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 38px;
+          color: $white;
+          text-transform: capitalize;
+        }
+
+        p.dates {
+          font-family: $sf-font;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: $ash;
+          text-transform: capitalize;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .story-input-main {
+    background: #222424;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+
+    .build-title {
+      padding: 12px 24px;
+      background: $purple-brand;
+      color: #fff;
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      -o-border-radius: 100px;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.64px;
+      font-family: $sf-font;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      textarea {
+        background: #222424;
+        border: none;
+        color: #fff;
+        min-height: 100px;
+        margin-bottom: 10px;
+        &:focus {
+          @include common-focus-action;
+        }
+      }
+      ::placeholder {
+        color: $ash;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $sf-font;
+      }
+      p {
+        color: $ash;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $sf-font;
+      }
+    }
+    .complete-btn {
+      border: 1px dashed #0071e3;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      font-size: 16px;
+      line-height: 19.09px;
+      font-weight: 700;
+      font-family: $sf-font;
+    }
   }
 }

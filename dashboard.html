@@ -1,340 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vision Flow Web Application</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/images/icon/flowicon.png"
-    />
-    <link rel="stylesheet" href="assets/fonts/fonts.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vision Flow Web Application</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/icon/flowicon.png" />
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
 
-    <link rel="stylesheet" href="assets/scss/style.css" />
-    <link rel="stylesheet" href="assets/scss/responsive.css" />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <section class="dashboard-main">
-      <div class="container-xxl">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="dashboard-header-main">
-              <div class="header-flex">
-                <div class="icon-box">
-                  <img
-                    src="assets/images/icon/noto_waving-hand.png"
-                    alt="icon"
-                  />
-                </div>
-                <div class="header-box">
-                  <h1 class="dashboard-title">Good Morning , Vishav</h1>
-                  <p class="dates">Wednesday, August 2, 2023</p>
-                </div>
+  <link rel="stylesheet" href="assets/scss/style.css" />
+  <link rel="stylesheet" href="assets/scss/responsive.css" />
+</head>
+
+<body>
+  <section class="dashboard-main">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="dashboard-header-main">
+            <div class="header-flex">
+              <div class="icon-box">
+                <img src="assets/images/icon/noto_waving-hand.png" alt="icon" />
+              </div>
+              <div class="header-box">
+                <h1 class="dashboard-title">Good Morning , Vishav</h1>
+                <p class="dates">Wednesday, August 2, 2023</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 dashboard-card-col">
-            <div class="dashboard-card h-100">
-              <div class="dashboard-card-header">
-                <h2 class="dash-card-title">Core Tasks</h2>
-              </div>
-              <div class="checked-tasks">
-                <div class="single-task-flex">
-                  <div class="check-icon">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                        checked
-                      />
-                    </div>
-                  </div>
-                  <div class="task-box">
-                    <button
-                      class="btn check-task-btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      Completed 20 min Yoga
-                    </button>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 dashboard-card-col">
+          <div class="dashboard-card h-100">
+            <div class="dashboard-card-header">
+              <h2 class="dash-card-title">Core Tasks</h2>
+            </div>
+            <div class="checked-tasks">
+              <div class="single-task-flex">
+                <div class="check-icon">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                   </div>
                 </div>
-                <div class="single-task-flex">
-                  <div class="check-icon">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                        checked
-                      />
-                    </div>
-                  </div>
-                  <div class="task-box">
-                    <button
-                      class="btn check-task-btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      Completed 2h Deep Work
-                    </button>
-                  </div>
-                </div>
-                <div class="single-task-flex">
-                  <div class="check-icon">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                        checked
-                      />
-                    </div>
-                  </div>
-                  <div class="task-box">
-                    <button
-                      class="btn check-task-btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      Completed Day 14 of intuitive connect
-                    </button>
-                  </div>
-                </div>
-                <div class="single-task-input">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Type weekly intention here..."
-                  />
-                </div>
-                <div class="single-task-input">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Type weekly intention here..."
-                  />
-                </div>
-                <div class="add-task-btn-wrapper">
-                  <button class="add-task-btn">
-                    <img src="./assets/images/icon/plus_w.png" alt="" />
-                    Add Task
+                <div class="task-box">
+                  <button class="btn check-task-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Completed 20 min Yoga
                   </button>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 dashboard-card-col">
-            <div class="dashboard-card h-100">
-              <div class="dashboard-card-header">
-                <h2 class="dash-card-title">Calender</h2>
-              </div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              cum accusamus natus similique sed commodi cumque? Incidunt
-              reiciendis obcaecati ipsa tempore quo deserunt, alias nulla
-              voluptatibus veritatis accusantium, est assumenda.
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 dashboard-card-col">
-            <div class="dashboard-card h-100">
-              <div class="dashboard-card-header">
-                <h2 class="dash-card-title">This weeks Quest</h2>
-                <div class="day">
-                  <a href="">
-                    <img
-                      src="./assets/images/icon/arrow_back_ios 1.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </a>
-                  <h4>Today</h4>
-                  <a href="">
-                    <img
-                      src="./assets/images/icon/arrow_forward_ios 1.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="checked-tasks">
-                <div class="single-task-flex">
-                  <div class="task-box-2">
-                    <button
-                      class="btn check-task-btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      <div class="check-icon">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="flexCheckDefault"
-                            checked
-                          />
-                        </div>
-                      </div>
-                      Day 18 - Blink 500 Times at 12PM EST
-                    </button>
+              <div class="single-task-flex">
+                <div class="check-icon">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                   </div>
                 </div>
-                <div class="single-task-input">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Type weekly intention here..."
-                  />
+                <div class="task-box">
+                  <button class="btn check-task-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Completed 2h Deep Work
+                  </button>
                 </div>
-                <div class="single-task-input">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Type weekly intention here..."
-                  />
+              </div>
+              <div class="single-task-flex">
+                <div class="check-icon">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                  </div>
                 </div>
+                <div class="task-box">
+                  <button class="btn check-task-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Completed Day 14 of intuitive connect
+                  </button>
+                </div>
+              </div>
+              <div class="single-task-input">
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                  placeholder="Type weekly intention here..." />
+              </div>
+              <div class="single-task-input">
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                  placeholder="Type weekly intention here..." />
+              </div>
+              <div class="add-task-btn-wrapper">
+                <button class="add-task-btn">
+                  <img src="./assets/images/icon/plus_w.png" alt="" />
+                  Add Task
+                </button>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 dashboard-card-col">
-            <div class="dashboard-card h-100">
-              <div class="dashboard-card-header">
-                <h2 class="spritual-card-title">Intuative Connect Practice</h2>
-                <div class="day">
-                  <a href="">
-                    <img
-                      src="./assets/images/icon/arrow_back_ios 1.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </a>
-                  <h4>Today</h4>
-                  <a href="">
-                    <img
-                      src="./assets/images/icon/arrow_forward_ios 1.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 dashboard-card-col">
+          <div class="dashboard-card mb-20 ">
+            <div class="dashboard-card-header">
+              <h2 class="dash-card-title">Calender</h2>
+            </div>
+            <div class="calendar-grid-main">
+              <div class="single-day-box">
+                <div class="day-title">Monday</div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+
+              </div>
+              <div class="single-day-box">
+                <div class="day-title">tuesday</div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
                 </div>
               </div>
-              <div class="checked-tasks">
-                <div class="single-task-flex">
-                  <div class="task-box-2">
-                    <button
-                      class="btn check-task-btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      <div class="check-icon">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="flexCheckDefault"
-                            checked
-                          />
-                        </div>
-                      </div>
-                      Day 18 - Blink 500 Times at 12PM EST
-                    </button>
-                  </div>
+              <div class="single-day-box active">
+                <div class="day-title">Wednesday</div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
                 </div>
-                <div class="single-task-flex">
-                  <div class="task-box-2">
-                    <button
-                      class="btn check-task-btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      <div class="check-icon">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="flexCheckDefault"
-                            checked
-                          />
-                        </div>
-                      </div>
-                      Morning Kriya Practices
-                    </button>
-                  </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
                 </div>
-                <div class="single-task-flex">
-                  <div class="task-box-2">
-                    <button
-                      class="btn check-task-btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      <div class="check-icon">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="flexCheckDefault"
-                            checked
-                          />
-                        </div>
-                      </div>
-                      Night Meditation ( ADD LINK - redirect to youtube)
-                    </button>
-                  </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
                 </div>
               </div>
-              <h5 class="quote-name">‘’Spritual Quote”</h5>
+              <div class="single-day-box">
+                <div class="day-title">thursday</div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+              </div>
+              <div class="single-day-box">
+                <div class="day-title">friday</div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+                <div class="single-task">
+                  10AM-12PM Create layout for Journey App (Sprints, Roadmap)
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="dashboard-card ">
+            <div class="dashboard-card-header">
+              <h2 class="dash-card-title">This weeks Quest</h2>
+              <div class="day d-flex align-items-center">
+                <a href="">
+                  <img src="./assets/images/icon/arrow_back_ios 1.png" alt="" class="img-fluid" />
+                </a>
+                <h4>Today</h4>
+                <a href="">
+                  <img src="./assets/images/icon/arrow_forward_ios 1.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="checked-tasks">
+              <div class="single-task-flex">
+                <div class="task-box-2">
+                  <button class="btn check-task-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="check-icon">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                      </div>
+                    </div>
+                    Day 18 - Blink 500 Times at 12PM EST
+                  </button>
+                </div>
+              </div>
+              <div class="single-task-input">
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                  placeholder="Type weekly intention here..." />
+              </div>
+              <div class="single-task-input">
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                  placeholder="Type weekly intention here..." />
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Modal -->
-        <div
-          class="modal fade dashboard-modal"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <!-- <div class="modal-header">
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 dashboard-card-col d-none">
+          <div class="dashboard-card h-100">
+            <div class="dashboard-card-header">
+              <h2 class="spritual-card-title">Intuative Connect Practice</h2>
+              <div class="day d-flex align-items-center">
+                <a href="">
+                  <img src="./assets/images/icon/arrow_back_ios 1.png" alt="" class="img-fluid" />
+                </a>
+                <h4>Today</h4>
+                <a href="">
+                  <img src="./assets/images/icon/arrow_forward_ios 1.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <div class="checked-tasks">
+              <div class="single-task-flex">
+                <div class="task-box-2">
+                  <a href="#" class="btn check-task-btn">
+                    <div class="check-icon">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                      </div>
+                    </div>
+                    Day 18 - Blink 500 Times at 12PM EST
+                  </a>
+                </div>
+              </div>
+              <div class="single-task-flex">
+                <div class="task-box-2">
+                  <a href="#" class="btn check-task-btn">
+                    <div class="check-icon">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                      </div>
+                    </div>
+                    Morning Kriya Practices
+                  </a>
+                </div>
+              </div>
+              <div class="single-task-flex">
+                <div class="task-box-2">
+                  <a href="#" class="btn check-task-btn">
+                    <div class="check-icon">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                      </div>
+                    </div>
+                    Night Meditation ( ADD LINK - redirect to youtube)
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h5 class="quote-name">‘’Spritual Quote”</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="common-progressbar-main">
+            <ul class="list-unstyled multi-steps">
+              <li>Start</li>
+              <li class="is-active">Sprint#1</li>
+              <li>Sprint#2</li>
+              <li>Sprint#3</li>
+              <li>MVP Completed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade dashboard-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">
                   Modal title
                 </h1>
@@ -345,151 +295,102 @@
                   aria-label="Close"
                 ></button>
               </div> -->
-              <div class="modal-body">
-                <div class="modal-body-content">
-                  <div class="modal-body-content-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <i class="fa-solid fa-xmark"></i>
-                    </button>
-                    <h2 class="modal-body-title">
-                      🎯 Sprint #1 - Create Basic Layout for Kaizen Flow
-                    </h2>
-                    <p class="modal-body-subtitle">
-                      Assign level/progress bar (LEVEL) The Beginning - Level 1
+            <div class="modal-body">
+              <div class="modal-body-content">
+                <div class="modal-body-content-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                  <h2 class="modal-body-title">
+                    🎯 Sprint #1 - Create Basic Layout for Kaizen Flow
+                  </h2>
+                  <p class="modal-body-subtitle">
+                    Assign level/progress bar (LEVEL) The Beginning - Level 1
+                  </p>
+                  <div class="date-wrapper">
+                    <div class="date">
+                      <img src="./assets/images/icon/calendar 1.png" alt="" class="img-fluid" />
+                      <span>July 31st 2023 --> August 7th 2023 (7 Day Sprint
+                        )</span>
+                    </div>
+                    <div class="color">
+                      <img src="./assets/images/icon/color.png" alt="" class="img-fluid" />
+                      <span>Color</span>
+                    </div>
+                  </div>
+                  <div class="modal-body-card">
+                    <h4 class="title">
+                      About this Project: (Problem, Why, Mission)
+                    </h4>
+                    <p class="text">
+                      For the past 7 months, I haven’t been finishing the
+                      projects that I had started. Going from one to another
+                      to an unending cycle of starting without completion.
                     </p>
-                    <div class="date-wrapper">
-                      <div class="date">
-                        <img
-                          src="./assets/images/icon/calendar 1.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                        <span
-                          >July 31st 2023 --> August 7th 2023 (7 Day Sprint
-                          )</span
-                        >
-                      </div>
-                      <div class="color">
-                        <img
-                          src="./assets/images/icon/color.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                        <span>Color</span>
-                      </div>
-                    </div>
-                    <div class="modal-body-card">
-                      <h4 class="title">
-                        About this Project: (Problem, Why, Mission)
-                      </h4>
-                      <p class="text">
-                        For the past 7 months, I haven’t been finishing the
-                        projects that I had started. Going from one to another
-                        to an unending cycle of starting without completion.
-                      </p>
-                      <p class="text">
-                        Now, as I’m get ting more in tuned with keeping my word,
-                        I am going to commit to complete my first SAAs Project,
-                        an idea I had in April of 2023. The idea came from me
-                        having no structure in my life & business.
-                      </p>
+                    <p class="text">
+                      Now, as I’m get ting more in tuned with keeping my word,
+                      I am going to commit to complete my first SAAs Project,
+                      an idea I had in April of 2023. The idea came from me
+                      having no structure in my life & business.
+                    </p>
 
-                      <div class="list-wrapper">
-                        <p class="list-title m-0">
-                          After leaving school, I was by myself - trying to
-                          figure what I would do with my time.
-                        </p>
-                        <ul>
-                          <li>I didn’t have clear calendar</li>
-                          <li>
-                            There wasn’t a plan on how I would execute my
-                            projects
-                          </li>
-                          <li>
-                            I didn’t have the foundation of a brand build laid
-                            out...
-                          </li>
-                        </ul>
-                      </div>
-                      <p class="text">
-                        This is what got me to the idea of Kaizen Flow.
+                    <div class="list-wrapper">
+                      <p class="list-title m-0">
+                        After leaving school, I was by myself - trying to
+                        figure what I would do with my time.
                       </p>
+                      <ul>
+                        <li>I didn’t have clear calendar</li>
+                        <li>
+                          There wasn’t a plan on how I would execute my
+                          projects
+                        </li>
+                        <li>
+                          I didn’t have the foundation of a brand build laid
+                          out...
+                        </li>
+                      </ul>
                     </div>
-                    <div class="get-done-list-wrapper">
-                      <h4 class="title">To Get Done This Week:</h4>
+                    <p class="text">
+                      This is what got me to the idea of Kaizen Flow.
+                    </p>
+                  </div>
+                  <div class="get-done-list-wrapper">
+                    <h4 class="title">To Get Done This Week:</h4>
 
-                      <form>
-                        <ul>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="vehicle1"
-                              name="vehicle1"
-                              value="Bike"
-                            />
-                            <label for="vehicle1"
-                              >Big Goal of the Week - Complete the Main Layouts
-                              for Kaizen Flow
-                            </label>
-                            <ul>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="vehicle2"
-                                  name="vehicle2"
-                                  value="Car"
-                                />
-                                <label for="vehicle2"
-                                  >Main Elements - Main Dashboard, Journey &
-                                  Calendar Dashboard (+Progress?)</label
-                                >
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="vehicle3"
-                                  name="vehicle3"
-                                  value="Boat"
-                                />
-                                <label for="vehicle3"
-                                  >Main Elements - Main Dashboard, Journey &
-                                  Calendar Dashboard (+Progress?)</label
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="vehicle2"
-                              name="vehicle2"
-                              value="Car"
-                            />
-                            <label for="vehicle2">
-                              Breakdown of Main Elements to Include of the
-                              Application</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="vehicle3"
-                              name="vehicle3"
-                              value="Boat"
-                            />
-                            <label for="vehicle3"
-                              >Main Elements - Main Dashboard, Journey &
-                              Calendar Dashboard (+Progress?)</label
-                            >
-                          </li>
-                        </ul>
-                      </form>
-                    </div>
+                    <form>
+                      <ul>
+                        <li>
+                          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                          <label for="vehicle1">Big Goal of the Week - Complete the Main Layouts
+                            for Kaizen Flow
+                          </label>
+                          <ul>
+                            <li>
+                              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+                              <label for="vehicle2">Main Elements - Main Dashboard, Journey &
+                                Calendar Dashboard (+Progress?)</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+                              <label for="vehicle3">Main Elements - Main Dashboard, Journey &
+                                Calendar Dashboard (+Progress?)</label>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+                          <label for="vehicle2">
+                            Breakdown of Main Elements to Include of the
+                            Application</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+                          <label for="vehicle3">Main Elements - Main Dashboard, Journey &
+                            Calendar Dashboard (+Progress?)</label>
+                        </li>
+                      </ul>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -497,19 +398,65 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <section class="fixed-nav-main">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="fixed-nav">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <div class="calender-box">
+                    <div class="month-name">August</div>
+                    <div class="date">03</div>
+                  </div>
+                  dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="icon-box">
+                    <img src="assets/images/icon/story.png" alt="">
+                  </div>
+                  <div class="nav-title">story</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="icon-box">
+                    <img src="assets/images/icon/terminal.png" alt="">
+                  </div>
+                  <div class="nav-title">Journey</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="icon-box">
+                    <img src="assets/images/icon/star.png" alt="">
+                  </div>
+                  <div class="nav-title">rewards</div>
+                </a>
+              </li>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-      crossorigin="anonymous"
-    ></script>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="assets/js/custom.js"></script>
-  </body>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+
+  <script src="assets/js/custom.js"></script>
+</body>
+
 </html>
