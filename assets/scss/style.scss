@@ -740,7 +740,7 @@ img {
   margin-bottom: 10px;
   @include trans-x-center;
   width: 100%;
-  z-index: 99;
+  z-index: 999999;
   .fixed-nav {
     ul.nav {
       li.nav-item {

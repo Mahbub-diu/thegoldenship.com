@@ -4,6 +4,7 @@
     font-family: inherit;
     font-weight: 500;
   }
+
   &:after {
     // background-color: #ededed;
     border: 1px solid #333636;
@@ -12,11 +13,13 @@
 
 .common-progressbar-main {
   margin-top: 20px;
+
   .multi-steps {
     display: table;
     table-layout: fixed;
     width: 100%;
-    > li {
+
+    >li {
       counter-increment: stepNum;
       text-align: center;
       display: table-cell;
@@ -39,6 +42,7 @@
         font-weight: bold;
         position: relative;
         z-index: 9;
+
         border: {
           width: 2px;
           style: solid;
@@ -46,6 +50,7 @@
           radius: 50%;
         }
       }
+
       &:after {
         content: '';
         // height: 2px;
@@ -58,6 +63,7 @@
         left: 50%;
         z-index: 0;
       }
+
       &:last-child {
         &:after {
           display: none;
@@ -66,14 +72,16 @@
 
       &.is-active {
         @extend %remain-steps;
+
         &:before {
           background-color: #7a00f3;
           border-color: #7a00f3;
         }
 
-        ~ li {
+        ~li {
           color: #fff;
           @extend %remain-steps;
+
           &:before {
             background-color: #333636;
             border-color: #333636;
@@ -86,4 +94,70 @@
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+
+
+
+.BorderGrid--spacious {
+  margin-top: -24px;
+  margin-bottom: -24px;
+
+  .BorderGrid-cell {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: table-cell;
+    border: 1px solid #333636;
+  }
+}
+
+.BorderGrid {
+  display: table;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+
+.BorderGrid-row {
+  display: table-row;
+}
+
+.Progress {
+  border-radius: 6px;
+  display: flex;
+  height: 10px;
+  outline: 1px solid #0000;
+  // overflow: hidden;
+
+}
+
+.Progress-item {
+  border-right: 1px solid #333636;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  .Progress-item-child {
+    z-index: 999;
+    border-right: 1px solid #b6b6b6;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .step {
+    position: absolute;
+    color: #fff;
+    right: 0%;
+    top: 110%;
+  }
 }

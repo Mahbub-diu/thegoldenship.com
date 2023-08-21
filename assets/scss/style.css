@@ -72,6 +72,61 @@
   margin-bottom: 20px;
 }
 
+.BorderGrid--spacious {
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+.BorderGrid--spacious .BorderGrid-cell {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: table-cell;
+  border: 1px solid #333636;
+}
+
+.BorderGrid {
+  display: table;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+.BorderGrid-row {
+  display: table-row;
+}
+
+.Progress {
+  border-radius: 6px;
+  display: flex;
+  height: 10px;
+  outline: 1px solid rgba(0, 0, 0, 0);
+}
+
+.Progress-item {
+  border-right: 1px solid #333636;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.Progress-item:last-child {
+  border-right: none;
+}
+.Progress-item .Progress-item-child {
+  z-index: 999;
+  border-right: 1px solid #b6b6b6;
+}
+.Progress-item .Progress-item-child:last-child {
+  border-right: none;
+}
+.Progress-item .step {
+  position: absolute;
+  color: #fff;
+  right: 0%;
+  top: 110%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -180,13 +235,6 @@ img {
   line-height: 26px;
   font-family: "SF Pro Display";
   font-weight: 400;
-}
-.login-main .login-parent .login-box ::-moz-placeholder {
-  color: #7f8283;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "SF Pro Display";
 }
 .login-main .login-parent .login-box ::placeholder {
   color: #7f8283;
@@ -473,9 +521,6 @@ img {
   font-size: 16px;
   padding: 8px 16px;
   margin-bottom: 15px;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control::-moz-placeholder {
-  color: #7f8283;
 }
 .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control::placeholder {
   color: #7f8283;
@@ -779,7 +824,7 @@ img {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   width: 100%;
-  z-index: 99;
+  z-index: 999999;
 }
 .fixed-nav-main .fixed-nav ul.nav li.nav-item {
   margin-right: 14px;
@@ -903,13 +948,6 @@ img {
 .storyboard-main .story-input-main .form-group textarea:focus {
   box-shadow: none;
   outline: none;
-}
-.storyboard-main .story-input-main .form-group ::-moz-placeholder {
-  color: #7f8283;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "SF Pro Display";
 }
 .storyboard-main .story-input-main .form-group ::placeholder {
   color: #7f8283;
