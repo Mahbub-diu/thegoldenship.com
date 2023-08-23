@@ -366,7 +366,7 @@ img {
   padding: 8px 16px;
   text-align: center;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: capitalize;
   font-weight: 700;
   font-family: "SF Pro Display";
@@ -377,11 +377,11 @@ img {
   background: #292a2a;
   padding: 8px;
   margin-bottom: 15px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   font-family: "SF Pro Display";
   color: #ffffff;
-  line-height: 14.32px;
+  line-height: 20px;
 }
 .dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .single-task:last-child {
   margin-bottom: 0;
