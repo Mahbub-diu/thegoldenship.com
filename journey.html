@@ -8,8 +8,8 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Vision Flow Web Application</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/icon/flowicon.png">
+  <title>thegoldenship.com</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/icon/flowicon.png">
 
   <meta name="description" content="" />
 
@@ -72,15 +72,15 @@
                       <button class="btn btn-primary btn-toggle-sidebar" data-bs-toggle="offcanvas"
                         data-bs-target="#addEventSidebar" aria-controls="addEventSidebar">
                         <i class="ti ti-plus me-1"></i>
-                        <span class="align-middle">Add Event</span>
+                        <span class="align-middle">Add Sprint</span>
                       </button>
                     </div>
                   </div>
                   <div class="p-3">
                     <!-- inline calendar (flatpicker) -->
-                    <div class="inline-calendar"></div>
+                    <!-- <div class="inline-calendar"></div>
 
-                    <hr class="container-m-nx mb-4 mt-3" />
+                    <hr class="container-m-nx mb-4 mt-3" /> -->
 
                     <!-- Filter -->
                     <div class="mb-3 ms-3">
@@ -97,14 +97,14 @@
                       <div class="form-check form-check-danger mb-2">
                         <input class="form-check-input input-filter" type="checkbox" id="select-personal"
                           data-value="personal" checked />
-                        <label class="form-check-label" for="select-personal">Personal</label>
+                        <label class="form-check-label" for="select-personal">In Progress</label>
                       </div>
                       <div class="form-check mb-2">
                         <input class="form-check-input input-filter" type="checkbox" id="select-business"
                           data-value="business" checked />
-                        <label class="form-check-label" for="select-business">Business</label>
+                        <label class="form-check-label" for="select-business">Completed</label>
                       </div>
-                      <div class="form-check form-check-warning mb-2">
+                      <!-- <div class="form-check form-check-warning mb-2">
                         <input class="form-check-input input-filter" type="checkbox" id="select-family"
                           data-value="family" checked />
                         <label class="form-check-label" for="select-family">Family</label>
@@ -118,7 +118,7 @@
                         <input class="form-check-input input-filter" type="checkbox" id="select-etc" data-value="etc"
                           checked />
                         <label class="form-check-label" for="select-etc">ETC</label>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -128,6 +128,22 @@
                 <div class="col app-calendar-content">
                   <div class="card shadow-none border-0">
                     <div class="card-body pb-0">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <div class="dashboard-header-main">
+
+                            <div class="header-flex">
+                              <div class="icon-box">
+                                <img src="assets/images/icon/terminal.png" alt="icon">
+                              </div>
+                              <div class="header-box">
+                                <h1 class="dashboard-title">Name Of Main Project</h1>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <!-- FullCalendar -->
                       <div id="calendar"></div>
                     </div>
@@ -137,7 +153,7 @@
                   <div class="offcanvas offcanvas-end event-sidebar" tabindex="-1" id="addEventSidebar"
                     aria-labelledby="addEventSidebarLabel">
                     <div class="offcanvas-header my-1">
-                      <h5 class="offcanvas-title" id="addEventSidebarLabel">Add Event</h5>
+                      <h5 class="offcanvas-title" id="addEventSidebarLabel">Add New Sprint</h5>
                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                     </div>
@@ -229,7 +245,7 @@
         <!--/ Content wrapper -->
       </div>
       <!--/ Layout container -->
-      
+
     </div>
   </div>
 

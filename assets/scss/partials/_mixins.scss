@@ -8,6 +8,15 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+@mixin trans-x-center {
+ 
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
 
 @mixin common-form-label {
   font-family: $sf-font;
@@ -110,4 +119,24 @@
 @mixin common-focus-action {
   box-shadow: none;
   outline: none;
+}
+
+@mixin common-task-input {
+  background: #292a2a;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #292a2a;
+  color: $white;
+  font-family: $sf-font;
+  font-size: 16px;
+  padding: 8px 16px;
+  &::placeholder {
+    color: $ash;
+    // opacity: 1;
+  }
 }

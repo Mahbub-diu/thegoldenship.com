@@ -49,6 +49,43 @@
     font-size: 14px;
     line-height: 10px;
   }
+  .dashboard-main .dashboard-header-main .header-flex .header-box h1.dashboard-title {
+    font-size: 24px;
+  }
+  .dashboard-main .dashboard-header-main .header-flex .header-box p.dates {
+    font-size: 14px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header {
+    align-items: start;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header h2.dash-card-title {
+    font-size: 20px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header h2.spritual-card-title {
+    font-size: 32px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day a {
+    width: 18px;
+    height: 18px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day h4 {
+    margin-top: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box .check-task-btn, .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box-2 .check-task-btn {
+    font-size: 14px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control {
+    font-size: 14px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .add-task-btn-wrapper .add-task-btn {
+    font-size: 16px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .add-task-btn-wrapper .add-task-btn img {
+    width: 20px;
+  }
 }
 @media (max-width: 575px) {
   .login-main .login-parent .login-box {
@@ -105,6 +142,43 @@
     font-size: 14px;
     line-height: 10px;
   }
+  .dashboard-main .dashboard-header-main .header-flex .header-box h1.dashboard-title {
+    font-size: 26px;
+  }
+  .dashboard-main .dashboard-header-main .header-flex .header-box p.dates {
+    font-size: 16px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header {
+    align-items: start;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header h2.dash-card-title {
+    font-size: 22px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header h2.spritual-card-title {
+    font-size: 34px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day a {
+    width: 18px;
+    height: 18px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day h4 {
+    margin-top: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box .check-task-btn, .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box-2 .check-task-btn {
+    font-size: 16px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control {
+    font-size: 16px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .add-task-btn-wrapper .add-task-btn {
+    font-size: 16px;
+  }
+  .dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .add-task-btn-wrapper .add-task-btn img {
+    width: 20px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .login-main .login-parent .login-box .logo-box {
@@ -126,5 +200,13 @@
   .login-main .login-parent .login-box form .reg-divider {
     line-height: 10px;
     font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .dashboard-card-col {
+    margin-bottom: 24px;
+  }
+  .dashboard-card-col:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=responsive.css.map */
