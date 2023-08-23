@@ -245,6 +245,101 @@ img {
   color: #ffffff;
   margin-bottom: 0;
 }
+.dashboard-main .dashboard-card .rewards-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background: #7a00f3;
+  max-width: 250px;
+  height: 45px;
+  border-radius: 50px;
+  padding: 12px, 24px, 12px, 24px;
+}
+.dashboard-main .dashboard-card .rewards-card-header h2.rewards-card-title {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 0;
+  text-align: center !important;
+}
+.dashboard-main .dashboard-card .rewards-table tr td {
+  font-family: "SF Pro Display";
+  vertical-align: middle;
+  background: transparent;
+  color: #ffffff;
+}
+.dashboard-main .dashboard-card .rewards-table tr td .redeem-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  color: #ffffff;
+  width: 120px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.dashboard-main .dashboard-card .rewards-table tr td .redeem-btn-1 {
+  background: #7a00f3;
+}
+.dashboard-main .dashboard-card .rewards-table tr td .redeem-btn-2 {
+  color: #7F8283;
+}
+.dashboard-main .dashboard-card .rewards-card-content h5 {
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav {
+  padding: 0;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link {
+  padding: 0;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point .points-description {
+  background: #171717;
+  padding: 12px 15px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point .points-description h5 {
+  margin-bottom: 5px;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-size: 16px;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point .points-description p {
+  margin: 0;
+  font-family: "SF Pro Display";
+  font-size: 12px;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point .points h5 {
+  margin: 0;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-size: 16px;
+}
+.dashboard-main .dashboard-card .rewards-card-content h5.extra-point-title {
+  margin-bottom: 12px;
+}
+.dashboard-main .dashboard-card .rewards-card-content ul.extra-point-title-list {
+  padding-left: 30px;
+}
+.dashboard-main .dashboard-card .rewards-card-content ul.extra-point-title-list li {
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-weight: 400;
+}
 .dashboard-main .dashboard-card .checked-tasks .single-task-flex {
   display: flex;
   flex-wrap: wrap;
@@ -289,6 +384,12 @@ img {
   font-size: 16px;
   line-height: 19.09px;
   text-align: left;
+}
+.dashboard-main .dashboard-card-col {
+  margin-bottom: 24px;
+}
+.dashboard-main .dashboard-card-col:last-child {
+  margin-bottom: 0;
 }
 
 .layout-wrapper {
