@@ -72,6 +72,61 @@
   margin-bottom: 20px;
 }
 
+.BorderGrid--spacious {
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+.BorderGrid--spacious .BorderGrid-cell {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: table-cell;
+  border: 1px solid #333636;
+}
+
+.BorderGrid {
+  display: table;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+.BorderGrid-row {
+  display: table-row;
+}
+
+.Progress {
+  border-radius: 6px;
+  display: flex;
+  height: 10px;
+  outline: 1px solid rgba(0, 0, 0, 0);
+}
+
+.Progress-item {
+  border-right: 1px solid #333636;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.Progress-item:last-child {
+  border-right: none;
+}
+.Progress-item .Progress-item-child {
+  z-index: 999;
+  border-right: 1px solid #b6b6b6;
+}
+.Progress-item .Progress-item-child:last-child {
+  border-right: none;
+}
+.Progress-item .step {
+  position: absolute;
+  color: #fff;
+  right: 0%;
+  top: 110%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -79,7 +134,6 @@ body {
   font-family: "Neue Machina";
   color: #7f8283;
   scroll-behavior: smooth;
-  background-color: #1a1b1c;
 }
 
 ul {
@@ -270,14 +324,12 @@ img {
   width: 100%;
   min-height: 100vh;
   padding: 28px;
-  margin-bottom: 100px;
 }
 .dashboard-main .dashboard-header-main {
   margin-bottom: 28px;
 }
 .dashboard-main .dashboard-header-main .header-flex {
   display: flex;
-  flex-wrap: wrap;
 }
 .dashboard-main .dashboard-header-main .header-flex .icon-box {
   flex-basis: 40px;
@@ -303,10 +355,66 @@ img {
   text-transform: capitalize;
   margin-bottom: 0;
 }
-.dashboard-main .dashboard-card-col {
-  margin-bottom: 24px;
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-toggle .avatar {
+  position: relative;
+  width: 2.375rem;
+  height: 2.375rem;
+  cursor: pointer;
 }
-.dashboard-main .dashboard-card-col .dashboard-card {
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-toggle .avatar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #fff;
+}
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-toggle .avatar.avatar-online::after {
+  background-color: #28c76f;
+}
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-menu {
+  min-width: 14rem;
+  left: auto;
+  top: 100%;
+  font-family: "SF Pro Display";
+  background: #222424;
+}
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-menu .dropdown-item {
+  line-height: 1.375;
+  width: calc(100% - 1rem);
+  margin: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  clear: both;
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-menu .dropdown-item .avatar {
+  position: relative;
+  width: 2.375rem;
+  height: 2.375rem;
+  cursor: pointer;
+}
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-menu .dropdown-item span {
+  color: #ffffff !important;
+}
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-menu .dropdown-item small {
+  color: #ffffff !important;
+}
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-menu .dropdown-item:hover {
+  color: #7a00f3;
+}
+.dashboard-main .dashboard-header-main .header-flex .profile-box .dropdown-menu .dropdown-item:hover span {
+  color: #7a00f3 !important;
+}
+.dashboard-main .dashboard-card {
   padding: 24px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -315,14 +423,14 @@ img {
   -o-border-radius: 10px;
   background: #222424;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header {
+.dashboard-main .dashboard-card .dashboard-card-header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header h2.dash-card-title {
+.dashboard-main .dashboard-card .dashboard-card-header h2.dash-card-title {
   font-family: "SF Pro Display";
   font-weight: 700;
   font-size: 28px;
@@ -331,77 +439,111 @@ img {
   color: #ffffff;
   margin-bottom: 0;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .spritual-card-title {
-  font-family: "Tangerine", cursive;
+.dashboard-main .dashboard-card .rewards-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background: #7a00f3;
+  max-width: 250px;
+  height: 45px;
+  border-radius: 50px;
+  padding: 12px, 24px, 12px, 24px;
+}
+.dashboard-main .dashboard-card .rewards-card-header h2.rewards-card-title {
+  font-family: "SF Pro Display";
   font-weight: 700;
-  font-size: 40px;
-  line-height: 38px;
+  font-size: 20px;
   text-transform: capitalize;
   color: #ffffff;
   margin-bottom: 0;
+  text-align: center !important;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day {
+.dashboard-main .dashboard-card .rewards-table tr td {
+  font-family: "SF Pro Display";
+  vertical-align: middle;
+  background: transparent;
+  color: #ffffff;
+}
+.dashboard-main .dashboard-card .rewards-table tr td .redeem-btn {
   display: flex;
   align-items: center;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day h4 {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: 5px;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .dashboard-card-header .day a {
-  width: 24px;
-  height: 24px;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .day-title {
-  background: #292a2a;
-  padding: 8px 16px;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-  text-transform: capitalize;
+  justify-content: space-between;
+  padding: 8px 14px;
+  color: #ffffff;
+  width: 120px;
+  border-radius: 10px;
+  font-size: 13px;
   font-weight: 700;
-  font-family: "SF Pro Display";
-  line-height: 16.71px;
-  margin-bottom: 15px;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .single-task {
-  background: #292a2a;
-  padding: 8px;
-  margin-bottom: 15px;
-  font-size: 14px;
-  font-weight: 400;
+.dashboard-main .dashboard-card .rewards-table tr td .redeem-btn-1 {
+  background: #7a00f3;
+}
+.dashboard-main .dashboard-card .rewards-table tr td .redeem-btn-2 {
+  color: #7f8283;
+}
+.dashboard-main .dashboard-card .rewards-card-content h5 {
   font-family: "SF Pro Display";
   color: #ffffff;
-  line-height: 20px;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box .single-task:last-child {
-  margin-bottom: 0;
+.dashboard-main .dashboard-card .rewards-card-content .nav {
+  padding: 0;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box.active .day-title {
-  background: #7a00f3;
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link {
+  padding: 0;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .calendar-grid-main .single-day-box.active .single-task {
-  background: #7a00f3;
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex {
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point .points-description {
+  background: #171717;
+  padding: 12px 15px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point .points-description h5 {
+  margin-bottom: 5px;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-size: 16px;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point .points-description p {
+  margin: 0;
+  font-family: "SF Pro Display";
+  font-size: 12px;
+}
+.dashboard-main .dashboard-card .rewards-card-content .nav a.nav-link .rewards-point .points h5 {
+  margin: 0;
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-size: 16px;
+}
+.dashboard-main .dashboard-card .rewards-card-content h5.extra-point-title {
+  margin-bottom: 12px;
+}
+.dashboard-main .dashboard-card .rewards-card-content ul.extra-point-title-list {
+  padding-left: 30px;
+}
+.dashboard-main .dashboard-card .rewards-card-content ul.extra-point-title-list li {
+  font-family: "SF Pro Display";
+  color: #ffffff;
+  font-weight: 400;
+}
+.dashboard-main .dashboard-card .checked-tasks .single-task-flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 15px;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .check-icon {
+.dashboard-main .dashboard-card .checked-tasks .single-task-flex .check-icon {
   margin-right: 10px;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input {
+.dashboard-main .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -410,18 +552,18 @@ img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input:focus {
+.dashboard-main .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input:focus {
   box-shadow: none;
   outline: none;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input:checked {
+.dashboard-main .dashboard-card .checked-tasks .single-task-flex .check-icon .form-check-input:checked {
   background-color: #00aa3a;
   border-color: #00aa3a;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box {
+.dashboard-main .dashboard-card .checked-tasks .single-task-flex .task-box {
   flex-basis: calc(100% - 40px);
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box .check-task-btn {
+.dashboard-main .dashboard-card .checked-tasks .single-task-flex .task-box .check-task-btn {
   width: 100%;
   padding: 8px 16px;
   background: #7a00f3;
@@ -437,192 +579,11 @@ img {
   line-height: 19.09px;
   text-align: left;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box-2 {
-  flex-basis: 100%;
+.dashboard-main .dashboard-card-col {
+  margin-bottom: 25px;
 }
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-flex .task-box-2 .check-task-btn {
-  width: 100%;
-  padding: 8px 16px;
-  background: #292a2a;
-  color: #ffffff;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  font-family: "SF Pro Display";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.09px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control {
-  background: #292a2a;
-  border: none;
-  box-shadow: none;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border: 1px solid #292a2a;
-  color: #ffffff;
-  font-family: "SF Pro Display";
-  font-size: 16px;
-  padding: 8px 16px;
-  margin-bottom: 15px;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control::-moz-placeholder {
-  color: #7f8283;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .single-task-input .form-control::placeholder {
-  color: #7f8283;
-}
-.dashboard-main .dashboard-card-col .dashboard-card .checked-tasks .add-task-btn-wrapper .add-task-btn {
-  background: #333636;
-  color: #ffffff;
-  width: 100%;
-  padding: 8px 24px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  font-family: "SF Pro Display";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
-  border: none;
-  background: #000;
-  margin-top: 0px;
-}
-.dashboard-main .dashboard-card-col .dashboard-card h5.quote-name {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
+.dashboard-main .dashboard-card-col:last-child {
   margin-bottom: 0;
-}
-.dashboard-main .dashboard-modal .modal-content {
-  background-color: #222424;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body {
-  padding: 55px;
-  font-family: "SF Pro Display";
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header {
-  position: relative;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .modal-body-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .modal-body-subtitle {
-  font-size: 14px;
-  font-weight: 400;
-  color: #7f8283;
-  margin-bottom: 15px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .btn-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: none;
-  font-size: 24px;
-  color: #7f8283;
-  transition: all 0.5s;
-  box-shadow: none;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .btn-close:hover {
-  color: #7a00f3;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper .date img {
-  margin-right: 10px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper .date span {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  color: #ffffff;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper .color img {
-  margin-right: 10px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-content-header .date-wrapper .color span {
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card {
-  background-color: #333636;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  padding: 24px;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card h4.title {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-bottom: 30px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card p.text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card p.text:last-child {
-  margin-bottom: 0;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card p.list-title {
-  padding: 0;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .modal-body-card ul li {
-  font-size: 16px;
-  font-weight: 400;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper h4.title {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: capitalize;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul {
-  list-style: none;
-  color: #ffffff;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li {
-  margin-bottom: 20px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li:first-child {
-  font-size: 16px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li input {
-  margin-right: 10px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li ul {
-  padding-left: 15px;
-}
-.dashboard-main .dashboard-modal .modal-content .modal-body .get-done-list-wrapper ul li ul li {
-  margin-bottom: 20px;
 }
 
 .layout-wrapper {
@@ -634,45 +595,11 @@ img {
 .light-style .app-calendar-wrapper {
   background-color: #1a1b1c;
 }
-.light-style .app-calendar-wrapper .app-calendar-sidebar {
-  border-right: 1px solid #7f8283;
-}
-.light-style .app-calendar-wrapper .app-calendar-sidebar hr {
-  border-color: #7f8283;
-}
-.light-style .app-calendar-wrapper .app-calendar-sidebar .btn-primary {
-  background-color: #7a00f3;
-  border-color: #7a00f3;
-}
 .light-style .app-calendar-wrapper .app-calendar-sidebar .flatpickr-calendar {
   background-color: #1a1b1c;
 }
 .light-style .app-calendar-wrapper .app-calendar-content .card {
   background-color: #1a1b1c;
-}
-.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main {
-  margin-bottom: 0px;
-}
-.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main .header-flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main .header-flex .icon-box {
-  flex-basis: 40px;
-  margin-right: 20px;
-}
-.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main .header-flex .header-box {
-  flex-basis: calc(100% - 60px);
-}
-.light-style .app-calendar-wrapper .app-calendar-content .card .card-body .dashboard-header-main .header-flex .header-box h1.dashboard-title {
-  font-family: "SF Pro Display";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 0;
 }
 .light-style .app-calendar-wrapper .app-calendar-content .card .card-body #calendar .fc-toolbar .fc-toolbar-chunk .fc-button-group .fc-button {
   color: #ffffff;
@@ -687,7 +614,6 @@ img {
 }
 .light-style .app-calendar-wrapper .app-calendar-content .card .card-body #calendar .fc-toolbar .fc-toolbar-chunk h2.fc-toolbar-title {
   color: #ffffff !important;
-  font-size: 14px;
 }
 .light-style .app-calendar-wrapper .app-calendar-content .card .card-body #calendar .fc-view-harness .fc-dayGridMonth-view .fc-scrollgrid {
   border: 1px solid #333636;
@@ -704,238 +630,4 @@ img {
 .light-style .fc .fc-list .fc-list-table th {
   border: 0;
   background: #222424;
-}
-
-.offcanvas {
-  background: #222424;
-}
-.offcanvas .offcanvas-title {
-  color: #ffffff;
-}
-.offcanvas .form-group {
-  margin-bottom: 20px;
-}
-.offcanvas .form-label {
-  font-family: "SF Pro Display";
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-.offcanvas .form-control {
-  padding: 12px 24px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border: 1px solid #333636;
-  background-color: #1a1b1c;
-  color: #ffffff;
-  font-family: "SF Pro Display";
-}
-.offcanvas .form-control:focus {
-  box-shadow: none;
-  outline: none;
-}
-.offcanvas .select2-container--default .select2-selection {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border: 1px solid #333636;
-  background-color: #1a1b1c;
-  color: #ffffff;
-  font-family: "SF Pro Display";
-}
-.offcanvas .flatpickr-input[readonly] {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border: 1px solid #333636;
-  background-color: #1a1b1c;
-  color: #ffffff;
-  font-family: "SF Pro Display";
-}
-.offcanvas .btn-primary {
-  background-color: #7a00f3;
-  border-color: #7a00f3;
-}
-
-.fixed-nav-main {
-  margin: 50px 0;
-  position: fixed;
-  bottom: 0;
-  background-color: #1a1b1c;
-  width: 100%;
-  margin-bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  width: 100%;
-  z-index: 99;
-}
-.fixed-nav-main .fixed-nav ul.nav li.nav-item {
-  margin-right: 14px;
-}
-.fixed-nav-main .fixed-nav ul.nav li.nav-item a.nav-link {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: "SF Pro Display";
-  text-transform: capitalize;
-  line-height: 24px;
-  min-height: 100px;
-}
-.fixed-nav-main .fixed-nav ul.nav li.nav-item a.nav-link.active {
-  border-bottom: 2px solid #7a00f3;
-  border-radius: 10px;
-}
-.fixed-nav-main .fixed-nav .calender-box {
-  min-width: 40px;
-  min-height: 40px;
-  background: #7a00f3;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  color: #fff;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.fixed-nav-main .fixed-nav .calender-box .month-name {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  font-family: "SF Pro Display";
-  text-transform: capitalize;
-}
-.fixed-nav-main .fixed-nav .calender-box .date {
-  font-weight: 700;
-  font-size: 15px;
-  border-top: 1px solid #222424;
-}
-.fixed-nav-main .fixed-nav .icon-box {
-  min-height: 50px;
-  margin-bottom: 10px;
-}
-.fixed-nav-main .fixed-nav .icon-box img {
-  max-height: 50px;
-}
-
-.storyboard-main {
-  background-color: #1a1b1c;
-  width: 100%;
-  min-height: 100vh;
-  padding: 28px;
-  margin-bottom: 100px;
-}
-.storyboard-main .dashboard-header-main {
-  margin-bottom: 28px;
-}
-.storyboard-main .dashboard-header-main .header-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.storyboard-main .dashboard-header-main .header-flex .icon-box {
-  flex-basis: 40px;
-  margin-right: 20px;
-}
-.storyboard-main .dashboard-header-main .header-flex .header-box {
-  flex-basis: calc(100% - 60px);
-}
-.storyboard-main .dashboard-header-main .header-flex .header-box h1.dashboard-title {
-  font-family: "SF Pro Display";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 38px;
-  color: #ffffff;
-  text-transform: capitalize;
-}
-.storyboard-main .dashboard-header-main .header-flex .header-box p.dates {
-  font-family: "SF Pro Display";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #7f8283;
-  text-transform: capitalize;
-  margin-bottom: 0;
-}
-.storyboard-main .story-input-main {
-  background: #222424;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  padding: 20px;
-}
-.storyboard-main .story-input-main .build-title {
-  padding: 12px 24px;
-  background: #7a00f3;
-  color: #fff;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  display: inline-block;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28.64px;
-  font-family: "SF Pro Display";
-  margin-bottom: 20px;
-}
-.storyboard-main .story-input-main .form-group textarea {
-  background: #222424;
-  border: none;
-  color: #fff;
-  min-height: 100px;
-  margin-bottom: 10px;
-}
-.storyboard-main .story-input-main .form-group textarea:focus {
-  box-shadow: none;
-  outline: none;
-}
-.storyboard-main .story-input-main .form-group ::-moz-placeholder {
-  color: #7f8283;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "SF Pro Display";
-}
-.storyboard-main .story-input-main .form-group ::placeholder {
-  color: #7f8283;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "SF Pro Display";
-}
-.storyboard-main .story-input-main .form-group p {
-  color: #7f8283;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "SF Pro Display";
-}
-.storyboard-main .story-input-main .complete-btn {
-  border: 1px dashed #0071e3;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  font-size: 16px;
-  line-height: 19.09px;
-  font-weight: 700;
-  font-family: "SF Pro Display";
 }/*# sourceMappingURL=style.css.map */
